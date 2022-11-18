@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Portfolio DevBaltico" />
@@ -162,18 +162,22 @@
 							<h3>Enviar tus inquietudes</h3>
 							<form id="form">
 								<input type="text" name="name" id="name" placeholder="Nombre" />
+								<p></p>
 								<input
-									type="text"
+									type="email"
 									name="email"
 									id="email"
 									placeholder="Tu Email"
 								/>
+								<p></p>
 								<input type="text" name="web" id="web" placeholder="Website" />
+								<p></p>
 								<textarea
 									placeholder="Mensaje"
 									name="mensaje"
 									id="mensaje"
 								></textarea>
+								<p></p>
 								<input
 									type="submit"
 									id="button"
@@ -254,6 +258,7 @@
 		<script src="js/jquery.slicknav.js"></script>
 		<script src="js/owl.carousel.min.js"></script>
 		<script src="js/main.js"></script>
+
 		<!========================= JS =========================>
 		<script>
 			const btn = document.getElementById('button');
@@ -263,7 +268,7 @@
 				.addEventListener('submit', function (event) {
 					event.preventDefault();
 
-					btn.value = 'Sending...';
+					btn.value = 'Enviando...';
 
 					const serviceID = 'default_service';
 					const templateID = 'template_o6vtk1n';

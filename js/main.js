@@ -174,3 +174,48 @@
 			);
 	});
 })(jQuery);
+
+/*------------------
+        Email JS
+    --------------------*/
+//https://www.youtube.com/watch?v=LQ-tPxSlM9s
+
+window.addEventListener('load', () => {
+	const form = document.querySelector('#form');
+
+	const nombre = document.getElementById('name');
+	const email = document.getElementById('email');
+	const sitio = document.getElementById('web');
+	const mensaje = document.getElementById('mensaje');
+
+	form.addEventListener('submit', (e) => {
+		e.preventDefault();
+		validaCampos();
+	});
+
+	const validaCampos = () => {
+		//capturar los valores ingresados por el usuario
+		const nombreValor = nombre.value.trim();
+		const emailValor = email.value.trim();
+		const sitioValor = sitio.value.trim();
+		const mensajeValor = mensaje.value();
+
+		if (!nombreValor === '') {
+			validaFalla(nombre, 'Campo vacío');
+		} else {
+			validaOk(nombre);
+		}
+	};
+
+	const validaFalla = (input, msje) => {
+		const formControl = input.parentElement;
+		const aviso = formControl.querySelector('p');
+		aviso.innerText = msje;
+
+		formControl.className = 'form-control falla';
+	};
+	const validaOk = (input, msje) => {
+		const formControl = input.parentElement;
+		formControl.className = 'form-control ok';
+	};
+});

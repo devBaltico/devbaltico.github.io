@@ -2099,3 +2099,12 @@ input[type='submit'] {
 	color: #fff;
 	border: none;
 }
+
+/*================ Contador ================*/
+.contador {
+	height: 20px;
+	width: 100px;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+}

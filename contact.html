@@ -29,6 +29,8 @@
 		<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
 		<link rel="stylesheet" href="css/slicknav.min.css" type="text/css" />
 		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<!-- Recatpcha -->
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	</head>
 
 	<body>
@@ -53,6 +55,7 @@
 									<li><a href="./index.html">Home</a></li>
 									<li><a href="./about.html">About me</a></li>
 									<li><a href="./portfolio.html">Portafolio</a></li>
+									<li><a href="./cursos.html">Cursos</a></li>
 									<li><a href="./services.html">Servicios</a></li>
 									<li class="active"><a href="./contact.html">Contacto</a></li>
 								</ul>
@@ -177,7 +180,12 @@
 									name="mensaje"
 									id="mensaje"
 								></textarea>
-								<p></p>
+								<div class="mb-3">
+									<div
+										class="g-recaptcha"
+										data-sitekey="6LfdwCgkAAAAALrk6kbWrJA7xrYVyImkJqRx7Zc_"
+									></div>
+								</div>
 								<input
 									type="submit"
 									id="button"

@@ -164,7 +164,12 @@
 						<div class="contact__form">
 							<h3>Enviar tus inquietudes</h3>
 							<form id="form">
-								<input type="text" name="name" id="name" placeholder="Nombre" />
+								<input
+									type="text"
+									name="nombre"
+									id="nombre"
+									placeholder="Nombre"
+								/>
 								<p></p>
 								<input
 									type="email"
@@ -173,13 +178,12 @@
 									placeholder="Tu Email"
 								/>
 								<p></p>
-								<input type="text" name="web" id="web" placeholder="Website" />
-								<p></p>
 								<textarea
 									placeholder="Mensaje"
 									name="mensaje"
 									id="mensaje"
 								></textarea>
+								<br />
 								<div class="mb-3">
 									<div
 										class="g-recaptcha"
@@ -193,7 +197,7 @@
 									value="Send Email"
 								/>
 							</form>
-
+							<div id="error"></div>
 							<script
 								type="text/javascript"
 								src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"

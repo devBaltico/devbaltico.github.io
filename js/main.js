@@ -1,17 +1,17 @@
 'use strict';
 
-(function ($) {
+(function($) {
 	/*------------------
         Preloader
     --------------------*/
-	$(window).on('load', function () {
+	$(window).on('load', function() {
 		$('.loader').fadeOut();
 		$('#preloder').delay(200).fadeOut('slow');
 
 		/*------------------
             Portfolio filter
         --------------------*/
-		$('.portfolio__filter li').on('click', function () {
+		$('.portfolio__filter li').on('click', function() {
 			$('.portfolio__filter li').removeClass('active');
 			$(this).addClass('active');
 		});
@@ -24,7 +24,7 @@
 	/*------------------
         Background Set
     --------------------*/
-	$('.set-bg').each(function () {
+	$('.set-bg').each(function() {
 		var bg = $(this).data('setbg');
 		$(this).css('background-image', 'url(' + bg + ')');
 	});
@@ -61,7 +61,7 @@
 	});
 
 	var dot = $('.hero__slider .owl-dot');
-	dot.each(function () {
+	dot.each(function() {
 		var index = $(this).index() + 1;
 		if (index < 10) {
 			$(this).html('0').append(index);
@@ -157,21 +157,19 @@
 	/*------------------
         Counter
     --------------------*/
-	$('.counter_num').each(function () {
-		$(this)
-			.prop('Counter', 0)
-			.animate(
-				{
-					Counter: $(this).text(),
+	$('.counter_num').each(function() {
+		$(this).prop('Counter', 0).animate(
+			{
+				Counter: $(this).text(),
+			},
+			{
+				duration: 4000,
+				easing: 'swing',
+				step: function(now) {
+					$(this).text(Math.ceil(now));
 				},
-				{
-					duration: 4000,
-					easing: 'swing',
-					step: function (now) {
-						$(this).text(Math.ceil(now));
-					},
-				}
-			);
+			}
+		);
 	});
 })(jQuery);
 
@@ -183,12 +181,12 @@
 window.addEventListener('load', () => {
 	const form = document.querySelector('#form');
 
-	const nombre = document.getElementById('name');
+	const nombre = document.getElementById('nombre');
 	const email = document.getElementById('email');
-	const sitio = document.getElementById('web');
+	const asunto = document.getElementById('asunto');
 	const mensaje = document.getElementById('mensaje');
 
-	form.addEventListener('submit', (e) => {
+	form.addEventListener('submit', e => {
 		e.preventDefault();
 		validaCampos();
 	});
@@ -197,7 +195,7 @@ window.addEventListener('load', () => {
 		//capturar los valores ingresados por el usuario
 		const nombreValor = nombre.value.trim();
 		const emailValor = email.value.trim();
-		const sitioValor = sitio.value.trim();
+		const asuntoValor = asunto.value.trim();
 		const mensajeValor = mensaje.value();
 
 		if (!nombreValor === '') {
@@ -205,7 +203,26 @@ window.addEventListener('load', () => {
 		} else {
 			validaOk(nombre);
 		}
+		if (!emailValor === '') {
+			validaFalla(email, 'Campo vacío');
+		} else {
+			validaOk(email);
+		}
+		if (!asuntoValor === '') {
+			validaFalla(asunto, 'Campo vacío');
+		} else {
+			validaOk(asunto);
+		}
+		if (!mensajeValor === '') {
+			validaFalla(mensaje, 'Campo vacío');
+		} else {
+			validaOk(mensaje);
+		}
 	};
+
+	function btnDisabled() {
+		btn.disabled = true;
+	}
 
 	const validaFalla = (input, msje) => {
 		const formControl = input.parentElement;

@@ -1730,7 +1730,7 @@ ol {
 	border: 1px solid rgba(225, 225, 225, 0.5);
 	background: transparent;
 	font-size: 16px;
-	color: rgb(12, 66, 2);
+	color: #adadad;
 	padding-left: 20px;
 	font-weight: 300;
 	margin-right: 20px;
@@ -1742,7 +1742,7 @@ ol {
 	color: #adadad;
 }
 .contact__form form input:focus {
-	border-color: #e1e1e1;
+	border-color: #0ace14;
 }
 .contact__form form textarea {
 	height: 110px;
@@ -1763,7 +1763,7 @@ ol {
 	color: #adadad;
 }
 .contact__form form textarea:focus {
-	border-color: #e1e1e1;
+	border-color: #0ace14;
 }
 
 /*--------------------------------- Responsive Media Quaries -----------------------------*/

@@ -1,62 +1,55 @@
-const form = document.getElementById('form');
-const nombre = document.getElementById('nombre');
-const email = document.getElementById('email');
-const asunto = document.getElementById('asunto');
-const mensaje = document.getElementById('mensaje');
+window.addEventListener('load', () => {
+	const form = document.getElementById('form');
+	const nombre = document.getElementById('nombre');
+	const email = document.getElementById('email');
+	const asunto = document.getElementById('asunto');
+	const mensaje = document.getElementById('mensaje');
 
-form.addEventListener('submit', e => {
-	e.preventDefault();
+	form.addEventListener('submit', (e) => {
+		e.preventDefault();
 
-	checkInputs();
+		checkInputs();
+	});
+
+	function checkInputs() {
+		// trim to remove the whitespaces
+		const nombreValue = nombre.value.trim();
+		const emailValue = email.value.trim();
+		const asuntoValue = asunto.value.trim();
+		const mensajeValue = mensaje.value.trim();
+
+		//validando campo usuario
+		//(!usuarioValor) ? console.log('CAMPO VACIO') : console.log(usuarioValor)
+		if (!nombreValor) {
+			//console.log('CAMPO VACIO')
+			validaFalla(nombre, 'Campo vacío');
+		} else {
+			validaOk(nombre);
+		}
+	}
 });
 
-function checkInputs() {
-	// trim to remove the whitespaces
-	const nombreValue = nombre.value.trim();
-	const emailValue = email.value.trim();
-	const asuntoValue = asunto.value.trim();
-	const mensajeValue = mensaje.value.trim();
+/** ===================== Bonton de enviar ====================== */
+/*
+const btn = document.getElementById('button');
 
-	if (nombreValue === '') {
-		setErrorFor(nombre, 'nombre cannot be blank');
-	} else {
-		setSuccessFor(nombre);
-	}
+document.getElementById('form').addEventListener('submit', function (event) {
+	event.preventDefault();
 
-	if (emailValue === '') {
-		setErrorFor(email, 'Email cannot be blank');
-	} else if (!isEmail(emailValue)) {
-		setErrorFor(email, 'Not a valid email');
-	} else {
-		setSuccessFor(email);
-	}
+	btn.value = 'Enviando...';
 
-	if (asuntoValue === '') {
-		setErrorFor(asunto, 'asunto cannot be blank');
-	} else {
-		setSuccessFor(asunto);
-	}
-	if (mensajeValue === '') {
-		setErrorFor(mensaje, 'mensaje cannot be blank');
-	} else {
-		setSuccessFor(mensaje);
-	}
-}
+	const serviceID = 'default_service';
+	const templateID = 'template_o6vtk1n';
 
-function setErrorFor(input, message) {
-	const formControl = input.parentElement;
-	const small = formControl.querySelector('small');
-	formControl.className = 'form-control error';
-	small.innerText = message;
-}
-
-function setSuccessFor(input) {
-	const formControl = input.parentElement;
-	formControl.className = 'form-control success';
-}
-
-function isEmail(email) {
-	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
-		email
+	emailjs.sendForm(serviceID, templateID, this).then(
+		() => {
+			btn.value = 'Enviar Mensaje';
+			alert('Mensaje enviado correctamente!');
+		},
+		(err) => {
+			btn.value = 'Enviar Mensaje';
+			alert(JSON.stringify(err));
+		}
 	);
-}
+});
+*/

@@ -176,12 +176,13 @@
 /*------------------
         Email JS
     --------------------*/
-//https://www.youtube.com/watch?v=LQ-tPxSlM9s
 
+//https://www.youtube.com/watch?v=LQ-tPxSlM9s
+/*
 window.addEventListener('load', () => {
 	const form = document.querySelector('#form');
 
-	const nombre = document.getElementById('nombre');
+	const nombre = document.getElementById('name');
 	const email = document.getElementById('email');
 	const asunto = document.getElementById('asunto');
 	const mensaje = document.getElementById('mensaje');
@@ -203,26 +204,25 @@ window.addEventListener('load', () => {
 		} else {
 			validaOk(nombre);
 		}
+
 		if (!emailValor === '') {
 			validaFalla(email, 'Campo vacío');
 		} else {
 			validaOk(email);
 		}
+
 		if (!asuntoValor === '') {
 			validaFalla(asunto, 'Campo vacío');
 		} else {
 			validaOk(asunto);
 		}
+
 		if (!mensajeValor === '') {
 			validaFalla(mensaje, 'Campo vacío');
 		} else {
 			validaOk(mensaje);
 		}
 	};
-
-	function btnDisabled() {
-		btn.disabled = true;
-	}
 
 	const validaFalla = (input, msje) => {
 		const formControl = input.parentElement;
@@ -236,3 +236,4 @@ window.addEventListener('load', () => {
 		formControl.className = 'form-control ok';
 	};
 });
+*/

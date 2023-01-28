@@ -10,11 +10,11 @@ input:focus {
 	outline: none;
 }
 
-.form-control.ok input {
+.contact__form.ok input {
 	border: 0.1px solid;
 	border-color: #08ffc8;
 }
-.form-control.falla input {
+.contact__form.falla input {
 	border: 0.1px solid;
 	border-color: #fe5f55;
 }
@@ -29,7 +29,7 @@ input:focus {
 	padding: 10px;
 	font-size: 18px;
 }
-.form-control p {
+.contact__form p {
 	visibility: hidden;
 	position: absolute;
 	font-size: small;
@@ -37,7 +37,7 @@ input:focus {
 	text-align: right;
 }
 
-.form-control.falla p {
+.contact__form.falla p {
 	visibility: visible;
-	color: #e74c3c;
+	color: #ff1900;
 }

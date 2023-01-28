@@ -18,13 +18,30 @@ window.addEventListener('load', () => {
 		const asuntoValue = asunto.value.trim();
 		const mensajeValue = mensaje.value.trim();
 
-		//validando campo usuario
-		//(!usuarioValor) ? console.log('CAMPO VACIO') : console.log(usuarioValor)
+		//validando campo nombre
 		if (!nombreValor) {
-			//console.log('CAMPO VACIO')
+			console.log('CAMPO VACIO');
 			validaFalla(nombre, 'Campo vacío');
 		} else {
 			validaOk(nombre);
+		}
+		//validando campo email
+		if (!emailValor) {
+			validaFalla(email, 'Campo vacío');
+		} else {
+			validaOk(email);
+		}
+		//validando campo asunto
+		if (!AsuntoValor) {
+			validaFalla(Asunto, 'Campo vacío');
+		} else {
+			validaOk(Asunto);
+		}
+		//validando campo mensaje
+		if (!mensajeValor) {
+			validaFalla(mensaje, 'Campo vacío');
+		} else {
+			validaOk(mensaje);
 		}
 	}
 });

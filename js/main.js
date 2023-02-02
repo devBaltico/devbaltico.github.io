@@ -177,7 +177,6 @@
         Email JS
     --------------------*/
 
-//https://www.youtube.com/watch?v=LQ-tPxSlM9s
 /*
 window.addEventListener('load', () => {
 	const form = document.querySelector('#form');

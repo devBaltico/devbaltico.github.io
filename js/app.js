@@ -5,7 +5,7 @@ window.addEventListener('load', () => {
 	const asunto = document.getElementById('asunto');
 	const mensaje = document.getElementById('mensaje');
 
-	form.addEventListener('submit', (e) => {
+	form.addEventListener('submit', e => {
 		e.preventDefault();
 
 		checkInputs();
@@ -13,10 +13,10 @@ window.addEventListener('load', () => {
 
 	function checkInputs() {
 		// trim to remove the whitespaces
-		const nombreValue = nombre.value.trim();
-		const emailValue = email.value.trim();
-		const asuntoValue = asunto.value.trim();
-		const mensajeValue = mensaje.value.trim();
+		const nombreValor = nombre.value.trim();
+		const emailValor = email.value.trim();
+		const asuntoValor = asunto.value.trim();
+		const mensajeValor = mensaje.value.trim();
 
 		//validando campo nombre
 		if (!nombreValor) {
@@ -32,7 +32,7 @@ window.addEventListener('load', () => {
 			validaOk(email);
 		}
 		//validando campo asunto
-		if (!AsuntoValor) {
+		if (!asuntoValor) {
 			validaFalla(Asunto, 'Campo vacío');
 		} else {
 			validaOk(Asunto);
@@ -47,10 +47,10 @@ window.addEventListener('load', () => {
 });
 
 /** ===================== Bonton de enviar ====================== */
-/*
+
 const btn = document.getElementById('button');
 
-document.getElementById('form').addEventListener('submit', function (event) {
+document.getElementById('form').addEventListener('submit', function(event) {
 	event.preventDefault();
 
 	btn.value = 'Enviando...';
@@ -63,10 +63,9 @@ document.getElementById('form').addEventListener('submit', function (event) {
 			btn.value = 'Enviar Mensaje';
 			alert('Mensaje enviado correctamente!');
 		},
-		(err) => {
+		err => {
 			btn.value = 'Enviar Mensaje';
 			alert(JSON.stringify(err));
 		}
 	);
 });
-*/

@@ -2115,3 +2115,9 @@ input[type='submit'] {
 	font-size: 16px;
 	font-family: 'Josefin Sans', sans-serif;
 }
+
+/*======= MOsca ============*/
+
+.mosca {
+	height: 36px;
+}

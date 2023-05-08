@@ -1,432 +1,376 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Portfolio DevBaltico" />
-		<meta
-			name="keywords"
-			content="Redes sociales, diseños, web, html, hosting"
-		/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-		<title>DevBaltico | Home</title>
 
-		<!-- Google Font -->
-		<link
-			href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
-			rel="stylesheet"
-		/>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="description" content="Portfolio DevBaltico" />
+	<meta name="keywords" content="Redes sociales, diseños, web, html, hosting" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+		integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!--- Google Icons --->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<title>DevBaltico | Home</title>
 
-		<!-- Css Styles -->
-		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-		<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
-		<link rel="stylesheet" href="css/elegant-icons.css" type="text/css" />
-		<link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
-		<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
-		<link rel="stylesheet" href="css/slicknav.min.css" type="text/css" />
-		<link rel="stylesheet" href="css/style.css" type="text/css" />
-		<!-- Google tag (gtag.js) -->
-		<script
-			async
-			src="https://www.googletagmanager.com/gtag/js?id=G-ZMHG4SX3MT"
-		></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag('js', new Date());
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet" />
 
-			gtag('config', 'G-ZMHG4SX3MT');
-		</script>
-	</head>
+	<!-- Css Styles -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/elegant-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+	<link rel="stylesheet" href="css/slicknav.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZMHG4SX3MT"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
 
-	<body>
-		<!-- Page Preloder -->
-		<div id="preloder">
-			<div class="loader"></div>
+		gtag('config', 'G-ZMHG4SX3MT');
+	</script>
+</head>
+
+<body>
+	<button id="btnScrollToTop">
+		<i class="material-icons">arrow_upward</i>
+	</button>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Header Section Begin -->
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2">
+					<div class="header__logo">
+						<a href="./index.html"><img src="img/logo.png" alt="" /></a>
+					</div>
+				</div>
+				<div class="col-lg-10">
+					<div class="header__nav__option">
+						<nav class="header__nav__menu mobile-menu">
+							<ul>
+								<li class="active"><a href="./index.html">Home</a></li>
+								<li><a href="./about.html">About me</a></li>
+								<li><a href="./portfolio.html">Portafolio</a></li>
+								<li><a href="./cursos.html">Cursos</a></li>
+								<li><a href="./services.html">Servicios</a></li>
+								<li><a href="./contact.html">Contacto</a></li>
+							</ul>
+						</nav>
+						<div class="header__nav__social">
+							<a href="https://twitter.com/devbaltico" target="_blank"><i class="fa fa-twitter"></i></a>
+							<a href="https://github.com/devbaltico" target="_blank"><i class="fa fa-github"></i></a>
+							<a href="https://www.instagram.com/devbaltico/" target="_blank"><i
+									class="fa fa-instagram"></i></a>
+							<a href="https://www.youtube.com/@devbaltico" target="_blank"><i
+									class="fa fa-youtube-play"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="mobile-menu-wrap"></div>
 		</div>
+	</header>
+	<!-- Header End -->
 
-		<!-- Header Section Begin -->
-		<header class="header">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-2">
-						<div class="header__logo">
-							<a href="./index.html"><img src="img/logo.png" alt="" /></a>
-						</div>
-					</div>
-					<div class="col-lg-10">
-						<div class="header__nav__option">
-							<nav class="header__nav__menu mobile-menu">
-								<ul>
-									<li class="active"><a href="./index.html">Home</a></li>
-									<li><a href="./about.html">About me</a></li>
-									<li><a href="./portfolio.html">Portafolio</a></li>
-									<li><a href="./cursos.html">Cursos</a></li>
-									<li><a href="./services.html">Servicios</a></li>
-									<li><a href="./contact.html">Contacto</a></li>
-								</ul>
-							</nav>
-							<div class="header__nav__social">
-								<a href="https://twitter.com/devbaltico" target="_blank"
-									><i class="fa fa-twitter"></i
-								></a>
-								<a href="https://github.com/devbaltico" target="_blank"
-									><i class="fa fa-github"></i
-								></a>
-								<a href="https://www.instagram.com/devbaltico/" target="_blank"
-									><i class="fa fa-instagram"></i
-								></a>
-								<a href="https://www.youtube.com/@devbaltico" target="_blank"
-									><i class="fa fa-youtube-play"></i
-								></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div id="mobile-menu-wrap"></div>
-			</div>
-		</header>
-		<!-- Header End -->
-
-		<!-- Hero Section Begin -->
-		<section class="hero">
-			<div class="hero__slider owl-carousel">
-				<div class="hero__item set-bg" data-setbg="img/hero/hero-1.webp">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-6">
-								<div class="hero__text">
-									<span>Bienvenido a mi sitio</span>
-									<h2>DevBaltico Cursos OnLine</h2>
-									<a href="cursos.html" class="primary-btn">Ver cursos</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="hero__item set-bg" data-setbg="img/hero/hero-2.webp">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-6">
-								<div class="hero__text">
-									<span>Páginas Responsive</span>
-									<h2>Páginas Web</h2>
-									<a href="portfolio.html" class="primary-btn"
-										>Ver páginas creadas</a
-									>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="hero__item set-bg" data-setbg="img/hero/hero-3.webp">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-6">
-								<div class="hero__text">
-									<span>Diseño para tus redes sociales</span>
-									<h2>Todo para las redes sociales</h2>
-									<a href="portfolio.html" class="primary-btn"
-										>Ver trabajos en redes sociales</a
-									>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Hero Section End -->
-
-		<!-- Services Section Begin -->
-		<section class="services spad">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-4">
-						<div class="services__title">
-							<div class="section-title">
-								<span>Mis servicios</span>
-								<h2>Habilidades</h2>
-							</div>
-							<p>
-								Diseño de páginas desde cero, manejo de WordPress, creación de
-								plantillas HTML, diseño de post para redes sociales, creación de
-								GIF y edición de videos.
-							</p>
-							<a href="services.html" class="primary-btn">Ver todo</a>
-						</div>
-					</div>
-					<div class="col-lg-8">
-						<div class="row">
-							<div class="col-lg-6 col-md-6 col-sm-6">
-								<div class="services__item">
-									<div class="services__item__icon">
-										<img src="img/icons/si-2.png" alt="" />
-									</div>
-									<h4>Páginas Web</h4>
-									<p>
-										Páginas web responsive, diseños modernos, plantillas HTML,
-										WordPress, diseño de páginas desde cero.
-									</p>
-								</div>
-							</div>
-							<div class="col-lg-6 col-md-6 col-sm-6">
-								<div class="services__item">
-									<div class="services__item__icon">
-										<img src="img/icons/si-1.png" alt="" />
-									</div>
-									<h4>Diseño para Redes Sociales</h4>
-									<p>
-										Diseño de post para redes sociales, bellos diseños, GIF y
-										videos.
-									</p>
-								</div>
-							</div>
-							<div class="col-lg-6 col-md-6 col-sm-6">
-								<div class="services__item">
-									<div class="services__item__icon">
-										<img src="img/icons/si-9.png" alt="" />
-									</div>
-									<h4>Videos</h4>
-									<p>Edición de videos.</p>
-								</div>
-							</div>
-							<div class="col-lg-6 col-md-6 col-sm-6">
-								<div class="services__item">
-									<div class="services__item__icon">
-										<img src="img/icons/si-10.png" alt="" />
-									</div>
-									<h4>Animaciones</h4>
-									<p>Animaciones.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Services Section End -->
-
-		<!-- Work Section Begin -->
-		<section class="work">
-			<div class="work__gallery">
-				<div class="grid-sizer"></div>
-				<div
-					class="work__item wide__item set-bg"
-					data-setbg="img/work/work-1.webp"
-				>
-					<a
-						href="https://www.youtube.com/watch?v=SWapMM5eNXM"
-						class="play-btn video-popup"
-						><i class="fa fa-play"></i
-					></a>
-					<div class="work__item__hover">
-						<h4>Videos Publicitarios</h4>
-						<ul>
-							<li>Video</li>
-							<li>DevBaltico</li>
-						</ul>
-					</div>
-				</div>
-				<div
-					class="work__item small__item set-bg"
-					data-setbg="img/work/work-2.webp"
-				>
-					<a
-						href="https://www.youtube.com/watch?v=8IW86MmSpOc"
-						class="play-btn video-popup"
-						><i class="fa fa-play"></i
-					></a>
-				</div>
-				<div
-					class="work__item small__item set-bg"
-					data-setbg="img/work/work-3.webp"
-				>
-					<a
-						href="https://www.youtube.com/watch?v=aLEfDGUsYUc"
-						class="play-btn video-popup"
-						><i class="fa fa-play"></i
-					></a>
-				</div>
-				<div
-					class="work__item large__item set-bg"
-					data-setbg="img/work/work-4.webp"
-				>
-					<a href="./portfolio.html" class="play-btn video-popup"
-						><i class="fa fa-play"></i
-					></a>
-					<div class="work__item__hover">
-						<h4>Páginas Web</h4>
-						<ul>
-							<li>Responsive</li>
-							<li>Diseño</li>
-						</ul>
-					</div>
-				</div>
-				<div
-					class="work__item small__item set-bg"
-					data-setbg="img/work/work-5.webp"
-				>
-					<a href="#" class="play-btn video-popup"
-						><i class="fa fa-play"></i
-					></a>
-				</div>
-				<div
-					class="work__item small__item set-bg"
-					data-setbg="img/work/work-6.webp"
-				>
-					<a href="#" class="play-btn video-popup"
-						><i class="fa fa-play"></i
-					></a>
-				</div>
-				<div
-					class="work__item wide__item set-bg"
-					data-setbg="img/work/work-7.webp"
-				>
-					<a href="./cursos.html" class="play-btn video-popup"
-						><i class="fa fa-play"></i
-					></a>
-					<div class="work__item__hover">
-						<h4>Cursos Prácticos</h4>
-						<ul>
-							<li>Vía ZOOM</li>
-							<li>Haz tu camino profesional</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Work Section End -->
-
-		<!-- Counter Section Begin -->
-		<section class="counter team spad set-bg" data-setbg="img/team-bg.webp">
-			<div class="container">
-				<div class="counter__content">
+	<!-- Hero Section Begin -->
+	<section class="hero">
+		<div class="hero__slider owl-carousel">
+			<div class="hero__item set-bg" data-setbg="img/hero/hero-1.webp">
+				<div class="container">
 					<div class="row">
-						<div class="col-lg-3 col-md-6 col-sm-6">
-							<div class="counter__item">
-								<div class="counter__item__text">
-									<img src="img/icons/ci-1.png" alt="" />
-									<h2 class="counter_num">237</h2>
-									<p>Proyectos Completados</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-6 col-sm-6">
-							<div class="counter__item second__item">
-								<div class="counter__item__text">
-									<img src="img/icons/ci-2.png" alt="" />
-									<h2 class="counter_num">1068</h2>
-									<p>Clientes Contentos</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-6 col-sm-6">
-							<div class="counter__item third__item">
-								<div class="counter__item__text">
-									<img src="img/icons/ci-3.png" alt="" />
-									<h2 class="counter_num">2</h2>
-									<p>En Producción</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-6 col-sm-6">
-							<div class="counter__item four__item">
-								<div class="counter__item__text">
-									<img src="img/icons/ci-4.png" alt="" />
-									<h2 class="counter_num">352</h2>
-									<p>Ideas Entregadas</p>
-								</div>
+						<div class="col-lg-6">
+							<div class="hero__text">
+								<span>Bienvenido a mi sitio</span>
+								<h2>DevBaltico Cursos OnLine</h2>
+								<a href="cursos.html" class="primary-btn">Ver cursos</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
-		<!-- Counter Section End -->
+			<div class="hero__item set-bg" data-setbg="img/hero/hero-2.webp">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="hero__text">
+								<span>Páginas Responsive</span>
+								<h2>Páginas Web</h2>
+								<a href="portfolio.html" class="primary-btn">Ver páginas creadas</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hero__item set-bg" data-setbg="img/hero/hero-3.webp">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="hero__text">
+								<span>Diseño para tus redes sociales</span>
+								<h2>Todo para las redes sociales</h2>
+								<a href="portfolio.html" class="primary-btn">Ver trabajos en redes sociales</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Hero Section End -->
 
-		<!-- Call To Action Section Begin -->
-		<section class="callto spad set-bg" data-setbg="img/callto-bg.webp">
-			<div class="container">
+	<!-- Services Section Begin -->
+	<section class="services spad">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="services__title">
+						<div class="section-title">
+							<span>Mis servicios</span>
+							<h2>Habilidades</h2>
+						</div>
+						<p>
+							Diseño de páginas desde cero, manejo de WordPress, creación de
+							plantillas HTML, diseño de post para redes sociales, creación de
+							GIF y edición de videos.
+						</p>
+						<a href="services.html" class="primary-btn">Ver todo</a>
+					</div>
+				</div>
+				<div class="col-lg-8">
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-6">
+							<div class="services__item">
+								<div class="services__item__icon">
+									<img src="img/icons/si-2.png" alt="" />
+								</div>
+								<h4>Páginas Web</h4>
+								<p>
+									Páginas web responsive, diseños modernos, plantillas HTML,
+									WordPress, diseño de páginas desde cero.
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6">
+							<div class="services__item">
+								<div class="services__item__icon">
+									<img src="img/icons/si-1.png" alt="" />
+								</div>
+								<h4>Diseño para Redes Sociales</h4>
+								<p>
+									Diseño de post para redes sociales, bellos diseños, GIF y
+									videos.
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6">
+							<div class="services__item">
+								<div class="services__item__icon">
+									<img src="img/icons/si-9.png" alt="" />
+								</div>
+								<h4>Videos</h4>
+								<p>Edición de videos.</p>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6">
+							<div class="services__item">
+								<div class="services__item__icon">
+									<img src="img/icons/si-10.png" alt="" />
+								</div>
+								<h4>Animaciones</h4>
+								<p>Animaciones.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Services Section End -->
+
+	<!-- Work Section Begin -->
+	<section class="work">
+		<div class="work__gallery">
+			<div class="grid-sizer"></div>
+			<div class="work__item wide__item set-bg" data-setbg="img/work/work-1.webp">
+				<a href="https://www.youtube.com/watch?v=SWapMM5eNXM" class="play-btn video-popup"><i
+						class="fa fa-play"></i></a>
+				<div class="work__item__hover">
+					<h4>Videos Publicitarios</h4>
+					<ul>
+						<li>Video</li>
+						<li>DevBaltico</li>
+					</ul>
+				</div>
+			</div>
+			<div class="work__item small__item set-bg" data-setbg="img/work/work-2.webp">
+				<a href="https://www.youtube.com/watch?v=8IW86MmSpOc" class="play-btn video-popup"><i
+						class="fa fa-play"></i></a>
+			</div>
+			<div class="work__item small__item set-bg" data-setbg="img/work/work-3.webp">
+				<a href="https://www.youtube.com/watch?v=aLEfDGUsYUc" class="play-btn video-popup"><i
+						class="fa fa-play"></i></a>
+			</div>
+			<div class="work__item large__item set-bg" data-setbg="img/work/work-4.webp">
+				<a href="./portfolio.html" class="play-btn video-popup"><i class="fa fa-play"></i></a>
+				<div class="work__item__hover">
+					<h4>Páginas Web</h4>
+					<ul>
+						<li>Responsive</li>
+						<li>Diseño</li>
+					</ul>
+				</div>
+			</div>
+			<div class="work__item small__item set-bg" data-setbg="img/work/work-5.webp">
+				<a href="#" class="play-btn video-popup"><i class="fa fa-play"></i></a>
+			</div>
+			<div class="work__item small__item set-bg" data-setbg="img/work/work-6.webp">
+				<a href="#" class="play-btn video-popup"><i class="fa fa-play"></i></a>
+			</div>
+			<div class="work__item wide__item set-bg" data-setbg="img/work/work-7.webp">
+				<a href="./cursos.html" class="play-btn video-popup"><i class="fa fa-play"></i></a>
+				<div class="work__item__hover">
+					<h4>Cursos Prácticos</h4>
+					<ul>
+						<li>Vía ZOOM</li>
+						<li>Haz tu camino profesional</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Work Section End -->
+
+	<!-- Counter Section Begin -->
+	<section class="counter team spad set-bg" data-setbg="img/team-bg.webp">
+		<div class="container">
+			<div class="counter__content">
 				<div class="row">
-					<div class="col-lg-8">
-						<div class="callto__text">
-							<h2>
-								Aumenta tus posibilidades de ventas con las redes sociales
-							</h2>
-							<p>Diseños modernos en tendencia</p>
-							<a href="portfolio.html">Pide tus diseños</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Call To Action Section End -->
-
-		<!-- Footer Section Begin -->
-		<footer class="footer">
-			<div class="container">
-				<div class="footer__top">
-					<div class="row">
-						<div class="col-lg-6 col-md-6">
-							<div class="footer__top__logo">
-								<a href="/"><img class="mosca" src="img/mosca-baltico.svg" alt="log baltico" /></a>
+					<div class="col-lg-3 col-md-6 col-sm-6">
+						<div class="counter__item">
+							<div class="counter__item__text">
+								<img src="img/icons/ci-1.png" alt="" />
+								<h2 class="counter_num">237</h2>
+								<p>Proyectos Completados</p>
 							</div>
 						</div>
-						<div class="col-lg-6 col-md-6">
-							<div class="footer__top__social">
-								<a href="https://twitter.com/devbaltico" target="_blank"
-									><i class="fa fa-twitter"></i
-								></a>
-								<a href="https://github.com/devbaltico" target="_blank"
-									><i class="fa fa-github"></i
-								></a>
-								<a href="https://www.instagram.com/devbaltico/" target="_blank"
-									><i class="fa fa-instagram"></i
-								></a>
-								<a href="https://www.youtube.com/@devbaltico" target="_blank"
-									><i class="fa fa-youtube-play"></i
-								></a>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6">
+						<div class="counter__item second__item">
+							<div class="counter__item__text">
+								<img src="img/icons/ci-2.png" alt="" />
+								<h2 class="counter_num">1068</h2>
+								<p>Clientes Contentos</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6">
+						<div class="counter__item third__item">
+							<div class="counter__item__text">
+								<img src="img/icons/ci-3.png" alt="" />
+								<h2 class="counter_num">2</h2>
+								<p>En Producción</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6">
+						<div class="counter__item four__item">
+							<div class="counter__item__text">
+								<img src="img/icons/ci-4.png" alt="" />
+								<h2 class="counter_num">352</h2>
+								<p>Ideas Entregadas</p>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="footer__copyright">
-					<div class="row">
-						<div class="col-lg-12 text-center">
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-							<p class="footer__copyright__text">
-								Copyright &copy;
-								<script>
-									document.write(new Date().getFullYear());
-								</script>
-								All rights reserved | Desarrollado por by
-								<a href="https://github.com/devbaltico" target="_blank"
-									>DevBaltico</a
-								>
-							</p>
+			</div>
+		</div>
+	</section>
+	<!-- Counter Section End -->
+
+	<!-- Call To Action Section Begin -->
+	<section class="callto spad set-bg" data-setbg="img/callto-bg.webp">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8">
+					<div class="callto__text">
+						<h2>
+							Aumenta tus posibilidades de ventas con las redes sociales
+						</h2>
+						<p>Diseños modernos en tendencia</p>
+						<a href="portfolio.html">Pide tus diseños</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Call To Action Section End -->
+
+	<!-- Footer Section Begin -->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__top">
+				<div class="row">
+					<div class="col-lg-6 col-md-6">
+						<div class="footer__top__logo">
+							<a href="/"><img class="mosca" src="img/mosca-baltico.svg" alt="log baltico" /></a>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6">
+						<div class="footer__top__social">
+							<a href="https://twitter.com/devbaltico" target="_blank"><i class="fa fa-twitter"></i></a>
+							<a href="https://github.com/devbaltico" target="_blank"><i class="fa fa-github"></i></a>
+							<a href="https://www.instagram.com/devbaltico/" target="_blank"><i
+									class="fa fa-instagram"></i></a>
+							<a href="https://www.youtube.com/@devbaltico" target="_blank"><i
+									class="fa fa-youtube-play"></i></a>
 						</div>
 					</div>
 				</div>
 			</div>
-		</footer>
-		<!-- Footer Section End -->
+			<div class="footer__copyright">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						<p class="footer__copyright__text">
+							Copyright &copy;
+							<script>
+								document.write(new Date().getFullYear());
+							</script>
+							All rights reserved | Desarrollado por by
+							<a href="https://github.com/devbaltico" target="_blank">DevBaltico</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer Section End -->
 
-		<!-- Js Plugins -->
-		<script src="js/jquery-3.3.1.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/jquery.magnific-popup.min.js"></script>
-		<script src="js/mixitup.min.js"></script>
-		<script src="js/masonry.pkgd.min.js"></script>
-		<script src="js/jquery.slicknav.js"></script>
-		<script src="js/owl.carousel.min.js"></script>
-		<script src="js/main.js"></script>
-	</body>
+	<!-- Js Plugins -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/mixitup.min.js"></script>
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/jquery.slicknav.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/scroll.js"></script>
+</body>
+
 </html>

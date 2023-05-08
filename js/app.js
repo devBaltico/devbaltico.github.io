@@ -69,3 +69,20 @@ document.getElementById('form').addEventListener('submit', function(event) {
 		}
 	);
 });
+
+//detecto el scrolling para aplicar la animacion de la barra de habilidades
+window.onscroll = function() {
+	efectoHabilidades();
+};
+
+/*==================== Button Scroll to top ====================*/
+const btnScrollToTop = document.querySelector('#btnScrollToTop');
+
+btnScrollToTop.addEventListener('click', function () {
+	window.scrollTo({
+		top: 0,
+		left: 0,
+		behavior: 'smooth',
+	});
+	$('html, body').animator({ scrollTop: 0 }, 'slow');
+});

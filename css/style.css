@@ -48,6 +48,244 @@ h6 {
 	font-family: 'Play', sans-serif;
 }
 
+.name {
+	color: #0ace14;
+}
+
+.skill li {
+	color: #ffffff;
+	margin: 20px 0;
+	padding: 10px;
+}
+
+.skillbar{
+	padding: 15px;
+}
+
+.titleskills {
+	color: #fff;
+	font-size: 20px;
+}
+
+.bar {
+	background-color: #444444;
+	display: block;
+	height: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	transition: all 0.3 cubic-bezier(.25,.8,.25,1);
+}
+.bar:hover {
+	box-shadow: 0 14px 28px rgba(168, 168, 168, 0.25), 0 10px 10px rgba(51, 172, 27, 0.22);
+	cursor: pointer;
+}
+
+.bar span {
+	height: 20px;
+	float: left;
+	background: linear-gradient(
+		135deg,
+		rgba(1, 68, 12, 100) 0%,
+		rgba(22, 255, 0, 100)
+	);
+}
+
+.html {
+	width: 95%;
+	animation: html 3s;
+}
+
+.css {
+	width: 40%;
+	animation: css 3s;
+}
+
+.sass {
+	width: 30%;
+	animation: sass 3s;
+}
+
+.javascript {
+	width: 35%;
+	animation: javascript 3s;
+}
+.reactjs {
+	width: 20%;
+	animation: reactjs 3s;
+}
+.mongodb {
+	width: 30%;
+	animation: mongodb 3s;
+}
+.nodejs {
+	width: 20%;
+	animation: nodejs 3s;
+}
+.redux {
+	width: 10%;
+	animation: redux 3s;
+}
+.linux {
+	width: 25%;
+	animation: linux 3s;
+}
+
+/*Web developer */
+@keyframes html {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 95%;
+	}
+}
+
+@keyframes css {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 40%;
+	}
+}
+
+@keyframes sass {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 30%;
+	}
+}
+
+@keyframes javascript {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 35%;
+	}
+}
+@keyframes reactjs {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 20%;
+	}
+}
+@keyframes mongodb {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 30%;
+	}
+}
+@keyframes nodejs {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 20%;
+	}
+}
+@keyframes redux {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 10%;
+	}
+}
+
+@keyframes linux {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 25%;
+	}
+}
+
+/* Diseñador */
+.photoshop {
+	width: 90%;
+	animation: photoshop 3s;
+}
+
+.illustrator {
+	width: 70%;
+	animation: illustrator 3s;
+}
+
+.premier {
+	width: 90%;
+	animation: premier 3s;
+}
+
+.creatividad {
+	width: 90%;
+	animation: creatividad 3s;
+}
+
+.proactivo {
+	width: 90%;
+	animation: proactivo 3s;
+}
+
+/* Diseñador */
+@keyframes photoshop {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 90%;
+	}
+}
+
+@keyframes illustrator {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 70%;
+	}
+}
+
+@keyframes premier {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 90%;
+	}
+}
+
+@keyframes creatividad {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 90%;
+	}
+}
+
+@keyframes proactivo {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 90%;
+	}
+}
+
+.hability {
+	color: #ffffff;
+}
+
 h1 {
 	font-size: 70px;
 }

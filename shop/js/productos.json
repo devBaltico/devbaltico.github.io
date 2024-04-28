@@ -1,0 +1,189 @@
+[
+	{
+		"id": "logo-01",
+		"titulo": "Logo Emprende",
+		"descripcion": "Diseño 2 versiones (no incluye manual de uso).",
+		"imagen": "./img/logos/logo1.webp",
+		"categoria": {
+			"nombre": "Diseño Gráfico",
+			"id": "diseno"
+		},
+		"precio": 25
+	},
+	{
+		"id": "logo-02",
+		"titulo": "Logo Negocio",
+		"descripcion": "Diseño versiones, incluye manual de uso, con 4 controles.",
+		"imagen": "./img/logos/logo2.webp",
+		"categoria": {
+			"nombre": "Diseño Gráfico",
+			"id": "diseno"
+		},
+		"precio": 35
+	},
+	{
+		"id": "logo-03",
+		"titulo": "Logo Profesional",
+		"descripcion": "Diseño 4 versiones, incluye manual de uso, con 10 controles.",
+		"imagen": "./img/logos/logo3.webp",
+		"categoria": {
+			"nombre": "Diseño Gráfico",
+			"id": "diseno"
+		},
+		"precio": 50
+	},
+	{
+		"id": "post12",
+		"titulo": "12 Post Estáticos",
+		"descripcion": "12 publicaciones estáticos (3 publicaciones a la semana 3x4) con 6 historias.",
+		"imagen": "./img/logos/post12.webp",
+		"categoria": {
+			"nombre": "Diseño Gráfico",
+			"id": "diseno"
+		},
+		"precio": 55
+	},
+	{
+		"id": "post20",
+		"titulo": "20 Post Estáticos",
+		"descripcion": "20 publicaciones estáticos (5 publicaciones a la semana 5x4) con 8 historias.",
+		"imagen": "./img/logos/post20.webp",
+		"categoria": {
+			"nombre": "Diseño Gráfico",
+			"id": "diseno"
+		},
+		"precio": 90
+	},
+	{
+		"id": "post30",
+		"titulo": "30 Post Estáticos",
+		"descripcion": "30 publicaciones estáticos (publicas todos los días) con 20 historias.",
+		"imagen": "./img/logos/post30.webp",
+		"categoria": {
+			"nombre": "Diseño Gráfico",
+			"id": "diseno"
+		},
+		"precio": 135
+	},
+	{
+		"id": "post12gif",
+		"titulo": "12 Post Animados",
+		"descripcion": "12 publicaciones animados (3 publicaciones a la semana 3x4) con 6 historias.",
+		"imagen": "./img/logos/post12gif.webp",
+		"categoria": {
+			"nombre": "Diseño Gráfico",
+			"id": "diseno"
+		},
+		"precio": 65
+	},
+	{
+		"id": "post20gif",
+		"titulo": "20 Post Animados",
+		"descripcion": "20 publicaciones animados (5 publicaciones a la semana 5x4) con 8 historias.",
+		"imagen": "./img/logos/post20gif.webp",
+		"categoria": {
+			"nombre": "Diseño Gráfico",
+			"id": "diseno"
+		},
+		"precio": 120
+	},
+	{
+		"id": "post30gif",
+		"titulo": "30 Post Animados",
+		"descripcion": "30 publicaciones animados (publicas todos los días) con 20 historias.",
+		"imagen": "./img/logos/post30gif.webp",
+		"categoria": {
+			"nombre": "Diseño Gráfico",
+			"id": "diseno"
+		},
+		"precio": 150
+	},
+	{
+		"id": "onepage",
+		"titulo": "OnePage",
+		"descripcion": "Toda la información en una sola página (OnePage), incluye: Home, Bio, portafolio y contacto.",
+		"imagen": "./img/pagweb/pagweb0.webp",
+		"categoria": {
+			"nombre": "Diseño Páginas Web",
+			"id": "pagweb"
+		},
+		"precio": 50
+	},
+	{
+		"id": "pagweb1",
+		"titulo": "Página Básica",
+		"descripcion": "Plantilla pre-diseñada incluye: Home, Bio, Servicios/Productos, Contacto.",
+		"imagen": "./img/pagweb/pagweb1.webp",
+		"categoria": {
+			"nombre": "Diseño Páginas Web",
+			"id": "pagweb"
+		},
+		"precio": 80
+	},
+	{
+		"id": "pagweb2",
+		"titulo": "Página Profesional",
+		"descripcion": "Plantilla pre-diseñada incluye: Home, Bio, Servicios/Productos, Contacto.",
+		"imagen": "./img/pagweb/pagweb2.webp",
+		"categoria": {
+			"nombre": "Diseño Páginas Web",
+			"id": "pagweb"
+		},
+		"precio": 150
+	},
+	{
+		"id": "pagweb3",
+		"titulo": "Página Business",
+		"descripcion": "Plantilla pre-diseñada E-commerce incluye: Home, Bio, Productos, Blog, Contacto.",
+		"imagen": "./img/pagweb/pagweb3.webp",
+		"categoria": {
+			"nombre": "Diseño Páginas Web",
+			"id": "pagweb"
+		},
+		"precio": 450
+	},
+	{
+		"id": "cursos1",
+		"titulo": "Curso WordPress",
+		"descripcion": "Aprende WordPress ",
+		"imagen": "./img/cursos/curso1.webp",
+		"categoria": {
+			"nombre": "Cursos OnLine",
+			"id": "cursos"
+		},
+		"precio": 30
+	},
+	{
+		"id": "cursos2",
+		"titulo": "Curso HTML",
+		"descripcion": "Aprende HTML ",
+		"imagen": "./img/cursos/curso2.webp",
+		"categoria": {
+			"nombre": "Cursos OnLine",
+			"id": "cursos"
+		},
+		"precio": 30
+	},
+	{
+		"id": "cursos3",
+		"titulo": "Curso CSS",
+		"descripcion": "Aprende CSS ",
+		"imagen": "./img/cursos/curso3.webp",
+		"categoria": {
+			"nombre": "Cursos OnLine",
+			"id": "cursos"
+		},
+		"precio": 30
+	},
+	{
+		"id": "servicios1",
+		"titulo": "Servicio Webmaster",
+		"descripcion": "Actualización, seguridad,  ",
+		"imagen": "./img/servicio/servicio1.webp",
+		"categoria": {
+			"nombre": "Servicios",
+			"id": "servicios"
+		},
+		"precio": 50
+	}
+]

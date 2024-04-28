@@ -9,7 +9,8 @@
 		/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>DevBaltico | Contacto</title>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<title>DevBaltico | Curso CSS3</title>
 
 		<!-- Google Font -->
 		<link
@@ -29,8 +30,20 @@
 		<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
 		<link rel="stylesheet" href="css/slicknav.min.css" type="text/css" />
 		<link rel="stylesheet" href="css/style.css" type="text/css" />
-		<!-- Recatpcha -->
-		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+		<!-- Google tag (gtag.js) -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-ZMHG4SX3MT"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+
+			gtag('config', 'G-ZMHG4SX3MT');
+		</script>
 	</head>
 
 	<body>
@@ -59,8 +72,8 @@
 									<li><a href="./index.html">Home</a></li>
 									<li><a href="./about.html">About me</a></li>
 									<li><a href="./portfolio.html">Portafolio</a></li>
-									<li><a href="./cursos.html">Cursos</a></li>
-									<li class="active"><a href="./contact.html">Contacto</a></li>
+									<li class="active"><a href="./cursos.html">Cursos</a></li>
+									<li><a href="./contact.html">Contacto</a></li>
 								</ul>
 							</nav>
 							<div class="header__nav__social">
@@ -70,7 +83,9 @@
 								<a href="https://github.com/devbaltico" target="_blank"
 									><i class="fa fa-github"></i
 								></a>
-								<a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+								<a href="https://www.instagram.com/devbaltico/" target="_blank"
+									><i class="fa fa-instagram"></i
+								></a>
 								<a href="https://www.youtube.com/@devbaltico" target="_blank"
 									><i class="fa fa-youtube-play"></i
 								></a>
@@ -92,10 +107,10 @@
 				<div class="row">
 					<div class="col-lg-12 text-center">
 						<div class="breadcrumb__text">
-							<h2>Contacto</h2>
+							<h2>Curso CSS 3</h2>
 							<div class="breadcrumb__links">
 								<a href="/">Home</a>
-								<span>Contacto</span>
+								<span>Cursos</span>
 							</div>
 						</div>
 					</div>
@@ -104,126 +119,134 @@
 		</div>
 		<!-- Breadcrumb End -->
 
-		<!-- Contact Widget Section Begin -->
-		<section class="contact-widget spad">
+		<!-- Cursos Section Begin -->
+		<section class="about spad">
+			<br />
+			<!================== CSS ==================>
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-4 col-md-6 col-md-6 col-md-3">
-						<div class="contact__widget__item">
-							<div class="contact__widget__item__icon">
-								<i class="fa fa-map-marker"></i>
-							</div>
-							<div class="contact__widget__item__text">
-								<h4>Ubicación</h4>
-								<p>Plaza Venezuela / Caracas</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-md-6 col-md-3">
-						<div class="contact__widget__item">
-							<div class="contact__widget__item__icon">
-								<i class="fa fa-phone"></i>
-							</div>
-							<div class="contact__widget__item__text">
-								<h4>Cellphone</h4>
-								<p>+58 416 2007899</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-md-6 col-md-3">
-						<div class="contact__widget__item">
-							<div class="contact__widget__item__icon">
-								<i class="fa fa-envelope"></i>
-							</div>
-							<div class="contact__widget__item__text">
-								<h4>Email</h4>
-								<p>Enviame tus comentarios</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Contact Widget Section End -->
-
-		<!-- Call To Action Section Begin -->
-		<section class="contact spad">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 col-md-6">
-						<div class="contact__map">
-							<iframe
-								src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1816.111609580629!2d-66.8812848689555!3d10.49923070917762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sve!4v1668098394484!5m2!1ses!2sve"
-								width="600"
-								height="450"
-								style="border: 0"
-								allowfullscreen=""
-								loading="lazy"
-								referrerpolicy="no-referrer-when-downgrade"
-							></iframe>
-						</div>
-					</div>
-					<div class="col-lg-6 col-md-6">
-						<div class="contact__form">
-							<h3>Enviar tus inquietudes</h3>
-							<form id="form">
-								<input
-									type="text"
-									name="nombre"
-									id="nombre"
-									placeholder="Nombre"
-								/>
-								<p></p>
-								<input
-									type="email"
-									name="email"
-									id="email"
-									placeholder="Tu Email"
-								/>
-								<p></p>
-								<input
-									type="text"
-									name="asunto"
-									id="asunto"
-									placeholder="Asunto"
-								/>
-								<p></p>
-								<textarea
-									placeholder="Mensaje"
-									name="mensaje"
-									id="mensaje"
-								></textarea>
-								<p></p>
-								<br />
-								<div class="mb-3">
+					<div class="col-lg-6">
+						<div class="about__pic">
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-sm-6">
 									<div
-										class="g-recaptcha"
-										data-sitekey="6LfdwCgkAAAAALrk6kbWrJA7xrYVyImkJqRx7Zc_"
+										class="about__pic__item about__pic__item--large set-bg"
+										data-setbg="img/cursos/procss.webp"
 									></div>
 								</div>
-								<input
-									type="submit"
-									id="button"
-									class="site-btn"
-									value="Send Email"
-								/>
-							</form>
-							<div id="error"></div>
-							<script
-								type="text/javascript"
-								src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-							></script>
+								<div class="col-lg-6 col-md-6 col-sm-6">
+									<div class="row">
+										<div class="col-lg-12">
+											<div
+												class="about__pic__item set-bg"
+												data-setbg="img/cursos/csscurs.webp"
+											></div>
+										</div>
+										<div class="col-lg-12">
+											<div
+												class="about__pic__item set-bg"
+												data-setbg="img/cursos/curcss.webp"
+											></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="about__text">
+							<div class="section-title">
+								<span id="html">Curso </span>
+								<h2>CSS 3</h2>
+							</div>
+							<div class="row">
+								<div>
+									<div class="services__item">
+										<div class="services__item__icon">
+											<img src="img/icons/si-3.png" alt="" />
+										</div>
+										<h4>Curso Online</h4>
+										<p>
+											Curso Práctico <b>vía ZOOM</b> te ayudará a construir tu
+											propia página web.
+										</p>
+										<h4>Contenido del curso</h4>
+										<p></p>
+										<ol class="contentcur">
+											<li>Introducción a CSS</li>
+											<li>Tres Opciones para CSS</li>
+											<li>Estilos en Línea</li>
+											<li>Elemento style</li>
+											<li>Archivo CSS</li>
+											<li>Selectores CSS</li>
+											<li>Selectores de Clase</li>
+											<li>Tamaño de Fuente</li>
+											<li>Familias Tipográficas</li>
+											<li>Google Fonts</li>
+											<li>Especifica cómo deben degradarse las fuentes</li>
+											<li>Cambiar el tamaño de las imágenes</li>
+											<li>Añade bordes alrededor de un elemento</li>
+											<li>Esquinas redondeadas</li>
+											<li>Imágenes redondeadas</li>
+											<li>Color de fondo de un div</li>
+											<li>Atributo id en CSS</li>
+											<li>Padding</li>
+											<li>Padding a cada lado</li>
+											<li>Padding en una línea</li>
+											<li>Margen</li>
+											<li>Ajustar el margen</li>
+											<li>Margen en una línea</li>
+											<li>Padding vs. Margin</li>
+											<li>Selectores de Atributo</li>
+											<li>Unidades absolutas y relativas</li>
+											<li>Aplicar estilos a body</li>
+											<li>Prioriza un estilo sobre otro</li>
+											<li>Prioridad de class vs. id</li>
+											<li>Prioridad de los estilos en línea</li>
+											<li>Códigos hexadecimales para colores</li>
+											<li>Abreviar códigos hexadecimales</li>
+											<li>Valores RGB para colores</li>
+											<li>Variables en CSS</li>
+											<li>Crear variables en CSS</li>
+											<li>Valores de respaldo</li>
+											<li>Compatibilidad con distintos navegadores</li>
+											<li>Heredar variables CSS</li>
+											<li>Cambiar variables para un área específica</li>
+										</ol>
+										<h4>Este curso incluye</h4>
+										<ul class="contentcur">
+											<li>Certificado de finalización.</li>
+											<li>2:30h horas de contenido max.</li>
+											<li>Recursos descargables.</li>
+										</ul>
+										<h4>Requisitos para este curso</h4>
+										<ul class="contentcur">
+											<li>Computadora o lapto.</li>
+											<li>Conexión a Internet.</li>
+											<li>Tener ZOOM</li>
+											<li>Cámara web.</li>
+											<li>Micrófono.</li>
+										</ul>
+										<h4>Formas de pago</h4>
+										<ul class="contentcur">
+											<li>
+												Transferencia (Banesco y Venezuela) aplica tasa del día
+												por Monitor Dólar
+											</li>
+											<li>Pago Móvil Banesco o Venezuela</li>
+										</ul>
 
-							<script type="text/javascript">
-								emailjs.init('0MDxkd89K5T5Ok70B');
-							</script>
+										<a href="./contact.html">Quiero hacer el curso</a>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<!-- CSS y HTML Section End -->
 		</section>
-		<!-- Call To Action Section End -->
-
+		<!-- Cursos Section End -->
 		<!-- Footer Section Begin -->
 		<footer class="footer">
 			<div class="container">
@@ -247,7 +270,9 @@
 								<a href="https://github.com/devbaltico" target="_blank"
 									><i class="fa fa-github"></i
 								></a>
-								<a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+								<a href="https://www.instagram.com/devbaltico/" target="_blank"
+									><i class="fa fa-instagram"></i
+								></a>
 								<a href="https://www.youtube.com/@devbaltico" target="_blank"
 									><i class="fa fa-youtube-play"></i
 								></a>
@@ -285,6 +310,5 @@
 		<script src="js/jquery.slicknav.js"></script>
 		<script src="js/owl.carousel.min.js"></script>
 		<script src="js/main.js"></script>
-		<script src="js/app.js"></script>
 	</body>
 </html>

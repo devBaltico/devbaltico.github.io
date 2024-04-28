@@ -1,641 +1,848 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Portfolio DevBaltico" />
+		<meta
+			name="keywords"
+			content="Redes sociales, diseños, web, html, hosting"
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<title>DevBaltico | Portafolio</title>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="description" content="Portfolio DevBaltico" />
-	<meta name="keywords" content="Redes sociales, diseños, web, html, hosting" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-	<title>DevBaltico | Portafolio</title>
+		<!-- Google Font -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
 
-	<!-- Google Font -->
-	<link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet" />
-	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
-		rel="stylesheet" />
+		<!-- Css Styles -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+		<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+		<link rel="stylesheet" href="css/elegant-icons.css" type="text/css" />
+		<link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
+		<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+		<link rel="stylesheet" href="css/slicknav.min.css" type="text/css" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<!-- Google tag (gtag.js) -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-ZMHG4SX3MT"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
 
-	<!-- Css Styles -->
-	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
-	<link rel="stylesheet" href="css/elegant-icons.css" type="text/css" />
-	<link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css" />
-	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
-	<link rel="stylesheet" href="css/slicknav.min.css" type="text/css" />
-	<link rel="stylesheet" href="css/style.css" type="text/css" />
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZMHG4SX3MT"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
+			gtag('config', 'G-ZMHG4SX3MT');
+		</script>
+	</head>
 
-		gtag('config', 'G-ZMHG4SX3MT');
-	</script>
-</head>
-
-<body>
-	<!-- Page Preloder -->
-	<div id="preloder">
-		<div class="loader"></div>
-	</div>
-
-	<!-- Header Section Begin -->
-	<header class="header">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-2">
-					<div class="header__logo">
-						<a href="./index.html"><img src="img/logo.png" alt="" /></a>
-					</div>
-				</div>
-				<div class="col-lg-10">
-					<div class="header__nav__option">
-						<nav class="header__nav__menu mobile-menu">
-							<ul>
-								<li><a href="./index.html">Home</a></li>
-								<li><a href="./about.html">About me</a></li>
-								<li class="active"><a href="./portfolio.html">Portafolio</a></li>
-								<li><a href="./cursos.html">Cursos</a></li>
-								<li><a href="./contact.html">Contacto</a></li>
-							</ul>
-						</nav>
-						<div class="header__nav__social">
-							<a href="https://twitter.com/devbaltico" target="_blank"><i class="fa fa-twitter"></i></a>
-							<a href="https://github.com/devbaltico" target="_blank"><i class="fa fa-github"></i></a>
-							<a href="https://www.instagram.com/devbaltico/" target="_blank"><i
-									class="fa fa-instagram"></i></a>
-							<a href="https://www.youtube.com/@devbaltico" target="_blank"><i
-									class="fa fa-youtube-play"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="mobile-menu-wrap"></div>
+	<body>
+		<!-- Page Preloder -->
+		<div id="preloder">
+			<div class="loader"></div>
 		</div>
-	</header>
-	<!-- Header End -->
+		<!-- Back To Top Button -->
+		<button onclick="topFunction()" id="myBtn" style="display: block">
+			<img src="img/up-arrow.png" alt="" />
+		</button>
 
-	<!-- Breadcrumb Begin -->
-	<div class="breadcrumb-option spad set-bg" data-setbg="img/breadcrumb-bg.webp">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 text-center">
-					<div class="breadcrumb__text">
-						<h2>Portafolio</h2>
-						<div class="breadcrumb__links">
-							<a href="/">Home</a>
-							<span>Portafolio</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Breadcrumb End -->
-
-	<!-- Portfolio Section Begin -->
-	<section class="portfolio spad">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<ul class="portfolio__filter">
-						<li class="active" data-filter="*">All</li>
-						<li data-filter=".web">Páginas Web</li>
-						<li data-filter=".marketing">Logos</li>
-						<li data-filter=".post">Post RRSS</li>
-						<li data-filter=".digital-marketing">Diseño Gráfico</li>
-						<li data-filter=".video">Video</li>
-					</ul>
-				</div>
-			</div>
-			<div class="row portfolio__gallery">
-				<div class="col-lg-4 col-md-6 col-sm-6 mix post">
-					<div class="portfolio__item">
-						<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/portfolio-1.jpg">
-							<a href="https://www.behance.net/gallery/95989545/Frutiartes" target="_blank"
-								rel="noopener noreferrer" class=""><i class="fa fa-play"></i></a>
-						</div>
-						<div class="portfolio__item__text">
-							<h4>Post</h4>
-							<ul>
-								<li>Redes Sociales</li>
-								<li>DevBaltico</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6 mix digital-marketing">
-					<div class="portfolio__item">
-						<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/portfolio-2.jpg">
-							<a href="https://www.behance.net/gallery/82572379/Imagen-corporativa" target="_blank"
-								rel="noopener noreferrer"><i class="fa fa-play"></i></a>
-						</div>
-						<div class="portfolio__item__text">
-							<h4>Imagen Corporativa</h4>
-							<span>Diseño Gráfico</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6 mix web">
-					<div class="portfolio__item">
-						<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/portfolio-3.jpg">
-							<a href="https://www.seleskisw.com" class="play-btn video-popup"><i
-									class="fa fa-play"></i></a>
-						</div>
-						<div class="portfolio__item__text">
-							<h4>Tienda de Ropa</h4>
-							<ul>
-								<li>E-Commerce</li>
-								<li>DevBaltico</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6 mix video">
-					<div class="portfolio__item">
-						<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/portfolio-4.jpg">
-							<a href="https://www.youtube.com/watch?v=qLqErzMv_F8" target="_blank"
-								rel="noopener noreferrer"><i class="fa fa-play"></i></a>
-						</div>
-						<div class="portfolio__item__text">
-							<h4>Video</h4>
-							<ul>
-								<li>Publicidad</li>
-								<li>DevBaltico</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6 mix post">
-					<div class="portfolio__item">
-						<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/portfolio-6.jpg">
-							<a href="https://www.behance.net/gallery/95989545/Frutiartes/modules/554372463"
-								class="play-btn video-popup"><i class="fa fa-play"></i></a>
-						</div>
-						<div class="portfolio__item__text">
-							<h4>Post</h4>
-							<ul>
-								<li>Redes Sociales</li>
-								<li>DevBaltico</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6 mix web">
-					<div class="portfolio__item">
-						<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/portfolio-7.jpg">
-							<a href="http://cmykdesigndigital.com/" class="play-btn video-popup"><i
-									class="fa fa-play"></i></a>
-						</div>
-						<div class="portfolio__item__text">
-							<h4>Portal de Cursos</h4>
-							<ul>
-								<li>E-Commerce</li>
-								<li>DevBaltico</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6 mix video">
-					<div class="portfolio__item">
-						<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/portfolio-8.jpg">
-							<a href="https://www.youtube.com/watch?v=ihL_d-wpjdw" class="play-btn video-popup"><i
-									class="fa fa-play"></i></a>
-						</div>
-						<div class="portfolio__item__text">
-							<h4>Video Publicitario</h4>
-							<span>Video</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6 mix web">
-					<div class="portfolio__item">
-						<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/portfolio-10.jpg">
-							<a href="http://mpps.gob.ve/" class="play-btn video-popup"><i class="fa fa-play"></i></a>
-						</div>
-						<div class="portfolio__item__text">
-							<h4>Portal de Salud</h4>
-							<ul>
-								<li>Noticias</li>
-								<li>DevBaltico</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6 mix post">
-					<div class="portfolio__item">
-						<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/portfolio-11.jpg">
-							<a href="https://www.behance.net/gallery/71915729/Proyecto-Cristalina/modules/418988491"
-								class="play-btn video-popup"><i class="fa fa-play"></i></a>
-						</div>
-						<div class="portfolio__item__text">
-							<h4>Post</h4>
-							<ul>
-								<li>Redes Sociales</li>
-								<li>DevBaltico</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6 mix post">
-					<div class="portfolio__item">
-						<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/portfolio-12.jpg">
-							<a href="https://www.behance.net/gallery/71915729/Proyecto-Cristalina/modules/418988491"
-								class="play-btn video-popup"><i class="fa fa-play"></i></a>
-						</div>
-						<div class="portfolio__item__text">
-							<h4>Post Animado</h4>
-							<ul>
-								<li>Redes Sociales</li>
-								<li>DevBaltico</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6 mix post">
-					<div class="portfolio__item">
-						<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/portfolio-13.jpg">
-							<a href="https://www.behance.net/gallery/71866003/Proyectos-Arturos-Panama" target="_blank"
-								rel="noopener noreferrer"><i class="fa fa-play"></i></a>
-						</div>
-						<div class="portfolio__item__text">
-							<h4>Proyectos Arturo's Panamá</h4>
-							<ul>
-								<li>Redes Sociales</li>
-								<li>DevBaltico</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6 mix post">
-					<div class="portfolio__item">
-						<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/portfolio-14.jpg">
-							<a href="https://www.behance.net/gallery/107577445/Capsulas-para-comercios-y-redes-sociales"
-								class="play-btn video-popup"><i class="fa fa-play"></i></a>
-						</div>
-						<div class="portfolio__item__text">
-							<h4>Videos</h4>
-							<ul>
-								<li>Redes Sociales</li>
-								<li>DevBaltico</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6 mix post">
-					<div class="portfolio__item">
-						<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/portfolio-15.jpg">
-							<a href="https://www.youtube.com/watch?v=D4WnfqDSwfI" target="_blank"
-								rel="noopener noreferrer"><i class="fa fa-play"></i></a>
-						</div>
-						<div class="portfolio__item__text">
-							<h4>Videos</h4>
-							<ul>
-								<li>Redes Sociales</li>
-								<li>DevBaltico</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6 mix post">
-					<div class="portfolio__item">
-						<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/portfolio-16.jpg">
-							<a href="https://www.youtube.com/watch?v=Hra3HFFVBBI" target="_blank"
-								rel="noopener noreferrer"><i class="fa fa-play"></i></a>
-						</div>
-						<div class="portfolio__item__text">
-							<h4>Videos</h4>
-							<ul>
-								<li>Redes Sociales</li>
-								<li>DevBaltico</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6 mix post">
-					<div class="portfolio__item">
-						<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/portfolio-17.jpg">
-							<a href="https://www.behance.net/gallery/84500951/Video-y-RRSS"
-								class="play-btn video-popup"><i class="fa fa-play"></i></a>
-						</div>
-						<div class="portfolio__item__text">
-							<h4>Videos</h4>
-							<ul>
-								<li>Redes Sociales</li>
-								<li>DevBaltico</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6 mix web">
-					<div class="portfolio__item">
-						<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/portfolio-18.jpg">
-							<a href="https://www.behance.net/portfolio/editor?project_id=107578385"
-								class="play-btn video-popup"><i class="fa fa-play"></i></a>
-						</div>
-						<div class="portfolio__item__text">
-							<h4>Portafolio</h4>
-							<ul>
-								<li>Fotografía</li>
-								<li>DevBaltico</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6 mix web">
-					<div class="portfolio__item">
-						<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/portfolio-19.jpg">
-							<a href="https://www.behance.net/gallery/82572379/Imagen-corporativa" target="_blank"
-								rel="noopener noreferrer"><i class="fa fa-play"></i></a>
-						</div>
-						<div class="portfolio__item__text">
-							<h4>Portal</h4>
-							<ul>
-								<li>Reclutamiento</li>
-								<li>DevBaltico</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6 mix digital-marketing">
-					<div class="portfolio__item">
-						<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/portfolio-20.jpg">
-							<a href="https://www.behance.net/gallery/109646941/Aqua-Brew" target="_blank"
-								rel="noopener noreferrer"><i class="fa fa-play"></i></a>
-						</div>
-						<div class="portfolio__item__text">
-							<h4>Brochure</h4>
-							<span>Diseño Gráfico</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6 mix video">
-					<div class="portfolio__item">
-						<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/portfolio-21.jpg">
-							<a href="https://www.youtube.com/watch?v=SWapMM5eNXM" class="play-btn video-popup"><i
-									class="fa fa-play"></i></a>
-						</div>
-						<div class="portfolio__item__text">
-							<h4>Video</h4>
-							<ul>
-								<li>Video Publiictario</li>
-								</li>
-								<li>DevBaltico</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6 mix web">
-					<div class="portfolio__item">
-						<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/portfolio-22.jpg">
-							<a href="https://meincodes-pro.web.app/" class="play-btn video-popup"><i
-									class="fa fa-play"></i></a>
-						</div>
-						<div class="portfolio__item__text">
-							<h4>Portal Tecnología</h4>
-							<ul>
-								<li>Tecnología</li>
-								<li>DevBaltico</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6 mix marketing">
-					<div class="portfolio__item">
-						<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/portfolio-25.jpg">
-						</div>
-						<div class="portfolio__item__text">
-							<h4>Logo</h4>
-							<ul>
-								<li>Indentidad</li>
-								<li>DevBaltico</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6 mix marketing">
-					<div class="portfolio__item">
-						<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/portfolio-23.jpg">
-						</div>
-						<div class="portfolio__item__text">
-							<h4>Logo</h4>
-							<ul>
-								<li>Indentidad</li>
-								<li>DevBaltico</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6 mix marketing">
-					<div class="portfolio__item">
-						<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/portfolio-24.jpg">
-						</div>
-						<div class="portfolio__item__text">
-							<h4>Logo</h4>
-							<ul>
-								<li>Indentidad</li>
-								<li>DevBaltico</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6 mix marketing">
-					<div class="portfolio__item">
-						<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/portfolio-26.jpg">
-						</div>
-						<div class="portfolio__item__text">
-							<h4>Logo</h4>
-							<ul>
-								<li>Indentidad</li>
-								<li>DevBaltico</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6 mix marketing">
-					<div class="portfolio__item">
-						<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/portfolio-27.jpg">
-						</div>
-						<div class="portfolio__item__text">
-							<h4>Logo</h4>
-							<ul>
-								<li>Indentidad</li>
-								<li>DevBaltico</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6 mix marketing">
-					<div class="portfolio__item">
-						<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/portfolio-28.jpg">
-						</div>
-						<div class="portfolio__item__text">
-							<h4>Logo</h4>
-							<ul>
-								<li>Indentidad</li>
-								<li>DevBaltico</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6 mix marketing">
-					<div class="portfolio__item">
-						<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/portfolio-29.jpg">
-						</div>
-						<div class="portfolio__item__text">
-							<h4>Logo</h4>
-							<ul>
-								<li>Indentidad</li>
-								<li>DevBaltico</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6 mix marketing">
-					<div class="portfolio__item">
-						<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/portfolio-30.jpg">
-						</div>
-						<div class="portfolio__item__text">
-							<h4>Logo</h4>
-							<ul>
-								<li>Indentidad</li>
-								<li>DevBaltico</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6 mix marketing">
-					<div class="portfolio__item">
-						<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/portfolio-31.jpg">
-						</div>
-						<div class="portfolio__item__text">
-							<h4>Logo</h4>
-							<ul>
-								<li>Indentidad</li>
-								<li>DevBaltico</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6 mix digital-marketing">
-					<div class="portfolio__item">
-						<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/portfolio-32.jpg">
-							<a href="#" target="_blank" rel="noopener noreferrer"><i class="fa fa-play"></i></a>
-						</div>
-						<div class="portfolio__item__text">
-							<h4>Flayer y Logo</h4>
-							<span>Diseño Gráfico</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6 mix digital-marketing">
-					<div class="portfolio__item">
-						<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/portfolio-33.jpg">
-							<a href="#" target="_blank" rel="noopener noreferrer"><i class="fa fa-play"></i></a>
-						</div>
-						<div class="portfolio__item__text">
-							<h4>Pendones</h4>
-							<span>Diseño Gráfico</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6 mix video">
-					<div class="portfolio__item">
-						<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/minialbum.webp">
-							<a href="https://www.youtube.com/watch?v=fXnHCfaYJZA" class="play-btn video-popup"><i
-									class="fa fa-play"></i></a>
-						</div>
-						<div class="portfolio__item__text">
-							<h4>Video</h4>
-							<ul>
-								<li>Mini Álbum</li>
-								</li>
-								<li>DevBaltico</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6 mix marketing">
-					<div class="portfolio__item">
-						<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/marca.webp">
-							<a href="https://www.youtube.com/watch?v=xfftg1XNmWQ" class="play-btn video-popup"><i
-								class="fa fa-play"></i></a>
-						</div>
-						<div class="portfolio__item__text">
-							<h4>Logo</h4>
-							<ul>
-								<li>Pensando en el Logo</li>
-								<li>Curso Gratis</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="pagination__option">
-						<a href="#" class="arrow__pagination left__arrow"><span class="arrow_left"></span> Prev</a>
-						<a href="#" class="number__pagination">1</a>
-						<a href="#" class="number__pagination">2</a>
-						<a href="#" class="arrow__pagination right__arrow">Next <span class="arrow_right"></span></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Portfolio Section End -->
-
-	<!-- Footer Section Begin -->
-	<footer class="footer">
-		<div class="container">
-			<div class="footer__top">
+		<!-- Header Section Begin -->
+		<header class="header">
+			<div class="container">
 				<div class="row">
-					<div class="col-lg-6 col-md-6">
-						<div class="footer__top__logo">
-							<a href="/"><img class="mosca" src="img/mosca-baltico.svg" alt="log baltico" /></a>
+					<div class="col-lg-2">
+						<div class="header__logo">
+							<a href="./index.html"><img src="img/logo.png" alt="" /></a>
 						</div>
 					</div>
-					<div class="col-lg-6 col-md-6">
-						<div class="footer__top__social">
-							<a href="https://twitter.com/devbaltico" target="_blank"><i class="fa fa-twitter"></i></a>
-							<a href="https://github.com/devbaltico" target="_blank"><i class="fa fa-github"></i></a>
-							<a href="https://www.instagram.com/devbaltico/" target="_blank"><i
-									class="fa fa-instagram"></i></a>
-							<a href="https://www.youtube.com/@devbaltico" target="_blank"><i
-									class="fa fa-youtube-play"></i></a>
+					<div class="col-lg-10">
+						<div class="header__nav__option">
+							<nav class="header__nav__menu mobile-menu">
+								<ul>
+									<li><a href="./index.html">Home</a></li>
+									<li><a href="./about.html">About me</a></li>
+									<li class="active">
+										<a href="./portfolio.html">Portafolio</a>
+									</li>
+									<li><a href="./cursos.html">Cursos</a></li>
+									<li><a href="./contact.html">Contacto</a></li>
+								</ul>
+							</nav>
+							<div class="header__nav__social">
+								<a href="https://twitter.com/devbaltico" target="_blank"
+									><i class="fa fa-twitter"></i
+								></a>
+								<a href="https://github.com/devbaltico" target="_blank"
+									><i class="fa fa-github"></i
+								></a>
+								<a href="https://www.instagram.com/devbaltico/" target="_blank"
+									><i class="fa fa-instagram"></i
+								></a>
+								<a href="https://www.youtube.com/@devbaltico" target="_blank"
+									><i class="fa fa-youtube-play"></i
+								></a>
+							</div>
 						</div>
 					</div>
 				</div>
+				<div id="mobile-menu-wrap"></div>
 			</div>
-			<div class="footer__copyright">
+		</header>
+		<!-- Header End -->
+
+		<!-- Breadcrumb Begin -->
+		<div
+			class="breadcrumb-option spad set-bg"
+			data-setbg="img/breadcrumb-bg.webp"
+		>
+			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 text-center">
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						<p class="footer__copyright__text">
-							Copyright &copy;
-							<script>
-								document.write(new Date().getFullYear());
-							</script>
-							All rights reserved | Desarrollado por by
-							<a href="https://github.com/devbaltico" target="_blank">DevBaltico</a>
-						</p>
+						<div class="breadcrumb__text">
+							<h2>Portafolio</h2>
+							<div class="breadcrumb__links">
+								<a href="/">Home</a>
+								<span>Portafolio</span>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</footer>
-	<!-- Footer Section End -->
+		<!-- Breadcrumb End -->
 
-	<!-- Js Plugins -->
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/mixitup.min.js"></script>
-	<script src="js/masonry.pkgd.min.js"></script>
-	<script src="js/jquery.slicknav.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/main.js"></script>
-</body>
+		<!-- Portfolio Section Begin -->
+		<section class="portfolio spad">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<ul class="portfolio__filter">
+							<li class="active" data-filter="*">All</li>
+							<li data-filter=".web">Páginas Web</li>
+							<li data-filter=".marketing">Logos</li>
+							<li data-filter=".post">Post RRSS</li>
+							<li data-filter=".digital-marketing">Diseño Gráfico</li>
+							<li data-filter=".video">Video</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row portfolio__gallery">
+					<div class="col-lg-4 col-md-6 col-sm-6 mix post">
+						<div class="portfolio__item">
+							<div
+								class="portfolio__item__video set-bg"
+								data-setbg="img/portfolio/portfolio-1.jpg"
+							>
+								<a
+									href="https://www.behance.net/gallery/95989545/Frutiartes"
+									target="_blank"
+									rel="noopener noreferrer"
+									class=""
+									><i class="fa fa-play"></i
+								></a>
+							</div>
+							<div class="portfolio__item__text">
+								<h4>Post</h4>
+								<ul>
+									<li>Redes Sociales</li>
+									<li>DevBaltico</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 mix digital-marketing">
+						<div class="portfolio__item">
+							<div
+								class="portfolio__item__video set-bg"
+								data-setbg="img/portfolio/portfolio-2.jpg"
+							>
+								<a
+									href="https://www.behance.net/gallery/82572379/Imagen-corporativa"
+									target="_blank"
+									rel="noopener noreferrer"
+									><i class="fa fa-play"></i
+								></a>
+							</div>
+							<div class="portfolio__item__text">
+								<h4>Imagen Corporativa</h4>
+								<span>Diseño Gráfico</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 mix web">
+						<div class="portfolio__item">
+							<div
+								class="portfolio__item__video set-bg"
+								data-setbg="img/portfolio/portfolio-3.jpg"
+							>
+								<a href="https://www.seleskisw.com" class="play-btn video-popup"
+									><i class="fa fa-play"></i
+								></a>
+							</div>
+							<div class="portfolio__item__text">
+								<h4>Tienda de Ropa</h4>
+								<ul>
+									<li>E-Commerce</li>
+									<li>DevBaltico</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 mix video">
+						<div class="portfolio__item">
+							<div
+								class="portfolio__item__video set-bg"
+								data-setbg="img/portfolio/portfolio-4.jpg"
+							>
+								<a
+									href="https://www.youtube.com/watch?v=qLqErzMv_F8"
+									target="_blank"
+									rel="noopener noreferrer"
+									><i class="fa fa-play"></i
+								></a>
+							</div>
+							<div class="portfolio__item__text">
+								<h4>Video</h4>
+								<ul>
+									<li>Publicidad</li>
+									<li>DevBaltico</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 mix post">
+						<div class="portfolio__item">
+							<div
+								class="portfolio__item__video set-bg"
+								data-setbg="img/portfolio/portfolio-6.jpg"
+							>
+								<a
+									href="https://www.behance.net/gallery/95989545/Frutiartes/modules/554372463"
+									class="play-btn video-popup"
+									><i class="fa fa-play"></i
+								></a>
+							</div>
+							<div class="portfolio__item__text">
+								<h4>Post</h4>
+								<ul>
+									<li>Redes Sociales</li>
+									<li>DevBaltico</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 mix web">
+						<div class="portfolio__item">
+							<div
+								class="portfolio__item__video set-bg"
+								data-setbg="img/portfolio/portfolio-7.jpg"
+							>
+								<a
+									href="http://cmykdesigndigital.com/"
+									class="play-btn video-popup"
+									><i class="fa fa-play"></i
+								></a>
+							</div>
+							<div class="portfolio__item__text">
+								<h4>Portal de Cursos</h4>
+								<ul>
+									<li>E-Commerce</li>
+									<li>DevBaltico</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 mix video">
+						<div class="portfolio__item">
+							<div
+								class="portfolio__item__video set-bg"
+								data-setbg="img/portfolio/portfolio-8.jpg"
+							>
+								<a
+									href="https://www.youtube.com/watch?v=ihL_d-wpjdw"
+									class="play-btn video-popup"
+									><i class="fa fa-play"></i
+								></a>
+							</div>
+							<div class="portfolio__item__text">
+								<h4>Video Publicitario</h4>
+								<span>Video</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 mix web">
+						<div class="portfolio__item">
+							<div
+								class="portfolio__item__video set-bg"
+								data-setbg="img/portfolio/portfolio-10.jpg"
+							>
+								<a href="http://mpps.gob.ve/" class="play-btn video-popup"
+									><i class="fa fa-play"></i
+								></a>
+							</div>
+							<div class="portfolio__item__text">
+								<h4>Portal de Salud</h4>
+								<ul>
+									<li>Noticias</li>
+									<li>DevBaltico</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 mix post">
+						<div class="portfolio__item">
+							<div
+								class="portfolio__item__video set-bg"
+								data-setbg="img/portfolio/portfolio-11.jpg"
+							>
+								<a
+									href="https://www.behance.net/gallery/71915729/Proyecto-Cristalina/modules/418988491"
+									class="play-btn video-popup"
+									><i class="fa fa-play"></i
+								></a>
+							</div>
+							<div class="portfolio__item__text">
+								<h4>Post</h4>
+								<ul>
+									<li>Redes Sociales</li>
+									<li>DevBaltico</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 mix post">
+						<div class="portfolio__item">
+							<div
+								class="portfolio__item__video set-bg"
+								data-setbg="img/portfolio/portfolio-12.jpg"
+							>
+								<a
+									href="https://www.behance.net/gallery/71915729/Proyecto-Cristalina/modules/418988491"
+									class="play-btn video-popup"
+									><i class="fa fa-play"></i
+								></a>
+							</div>
+							<div class="portfolio__item__text">
+								<h4>Post Animado</h4>
+								<ul>
+									<li>Redes Sociales</li>
+									<li>DevBaltico</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 mix post">
+						<div class="portfolio__item">
+							<div
+								class="portfolio__item__video set-bg"
+								data-setbg="img/portfolio/portfolio-13.jpg"
+							>
+								<a
+									href="https://www.behance.net/gallery/71866003/Proyectos-Arturos-Panama"
+									target="_blank"
+									rel="noopener noreferrer"
+									><i class="fa fa-play"></i
+								></a>
+							</div>
+							<div class="portfolio__item__text">
+								<h4>Proyectos Arturo's Panamá</h4>
+								<ul>
+									<li>Redes Sociales</li>
+									<li>DevBaltico</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 mix post">
+						<div class="portfolio__item">
+							<div
+								class="portfolio__item__video set-bg"
+								data-setbg="img/portfolio/portfolio-14.jpg"
+							>
+								<a
+									href="https://www.behance.net/gallery/107577445/Capsulas-para-comercios-y-redes-sociales"
+									class="play-btn video-popup"
+									><i class="fa fa-play"></i
+								></a>
+							</div>
+							<div class="portfolio__item__text">
+								<h4>Videos</h4>
+								<ul>
+									<li>Redes Sociales</li>
+									<li>DevBaltico</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 mix post">
+						<div class="portfolio__item">
+							<div
+								class="portfolio__item__video set-bg"
+								data-setbg="img/portfolio/portfolio-15.jpg"
+							>
+								<a
+									href="https://www.youtube.com/watch?v=D4WnfqDSwfI"
+									target="_blank"
+									rel="noopener noreferrer"
+									><i class="fa fa-play"></i
+								></a>
+							</div>
+							<div class="portfolio__item__text">
+								<h4>Videos</h4>
+								<ul>
+									<li>Redes Sociales</li>
+									<li>DevBaltico</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 mix post">
+						<div class="portfolio__item">
+							<div
+								class="portfolio__item__video set-bg"
+								data-setbg="img/portfolio/portfolio-16.jpg"
+							>
+								<a
+									href="https://www.youtube.com/watch?v=Hra3HFFVBBI"
+									target="_blank"
+									rel="noopener noreferrer"
+									><i class="fa fa-play"></i
+								></a>
+							</div>
+							<div class="portfolio__item__text">
+								<h4>Videos</h4>
+								<ul>
+									<li>Redes Sociales</li>
+									<li>DevBaltico</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 mix post">
+						<div class="portfolio__item">
+							<div
+								class="portfolio__item__video set-bg"
+								data-setbg="img/portfolio/portfolio-17.jpg"
+							>
+								<a
+									href="https://www.behance.net/gallery/84500951/Video-y-RRSS"
+									class="play-btn video-popup"
+									><i class="fa fa-play"></i
+								></a>
+							</div>
+							<div class="portfolio__item__text">
+								<h4>Videos</h4>
+								<ul>
+									<li>Redes Sociales</li>
+									<li>DevBaltico</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 mix web">
+						<div class="portfolio__item">
+							<div
+								class="portfolio__item__video set-bg"
+								data-setbg="img/portfolio/portfolio-18.jpg"
+							>
+								<a
+									href="https://www.behance.net/portfolio/editor?project_id=107578385"
+									class="play-btn video-popup"
+									><i class="fa fa-play"></i
+								></a>
+							</div>
+							<div class="portfolio__item__text">
+								<h4>Portafolio</h4>
+								<ul>
+									<li>Fotografía</li>
+									<li>DevBaltico</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 mix web">
+						<div class="portfolio__item">
+							<div
+								class="portfolio__item__video set-bg"
+								data-setbg="img/portfolio/portfolio-19.jpg"
+							>
+								<a
+									href="https://www.behance.net/gallery/82572379/Imagen-corporativa"
+									target="_blank"
+									rel="noopener noreferrer"
+									><i class="fa fa-play"></i
+								></a>
+							</div>
+							<div class="portfolio__item__text">
+								<h4>Portal</h4>
+								<ul>
+									<li>Reclutamiento</li>
+									<li>DevBaltico</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 mix digital-marketing">
+						<div class="portfolio__item">
+							<div
+								class="portfolio__item__video set-bg"
+								data-setbg="img/portfolio/portfolio-20.jpg"
+							>
+								<a
+									href="https://www.behance.net/gallery/109646941/Aqua-Brew"
+									target="_blank"
+									rel="noopener noreferrer"
+									><i class="fa fa-play"></i
+								></a>
+							</div>
+							<div class="portfolio__item__text">
+								<h4>Brochure</h4>
+								<span>Diseño Gráfico</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 mix video">
+						<div class="portfolio__item">
+							<div
+								class="portfolio__item__video set-bg"
+								data-setbg="img/portfolio/portfolio-21.jpg"
+							>
+								<a
+									href="https://www.youtube.com/watch?v=SWapMM5eNXM"
+									class="play-btn video-popup"
+									><i class="fa fa-play"></i
+								></a>
+							</div>
+							<div class="portfolio__item__text">
+								<h4>Video</h4>
+								<ul>
+									<li>Video Publiictario</li>
+									<li>DevBaltico</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 mix web">
+						<div class="portfolio__item">
+							<div
+								class="portfolio__item__video set-bg"
+								data-setbg="img/portfolio/portfolio-22.jpg"
+							>
+								<a
+									href="https://meincodes-pro.web.app/"
+									class="play-btn video-popup"
+									><i class="fa fa-play"></i
+								></a>
+							</div>
+							<div class="portfolio__item__text">
+								<h4>Portal Tecnología</h4>
+								<ul>
+									<li>Tecnología</li>
+									<li>DevBaltico</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 mix marketing">
+						<div class="portfolio__item">
+							<div
+								class="portfolio__item__video set-bg"
+								data-setbg="img/portfolio/portfolio-25.jpg"
+							></div>
+							<div class="portfolio__item__text">
+								<h4>Logo</h4>
+								<ul>
+									<li>Indentidad</li>
+									<li>DevBaltico</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 mix marketing">
+						<div class="portfolio__item">
+							<div
+								class="portfolio__item__video set-bg"
+								data-setbg="img/portfolio/portfolio-23.jpg"
+							></div>
+							<div class="portfolio__item__text">
+								<h4>Logo</h4>
+								<ul>
+									<li>Indentidad</li>
+									<li>DevBaltico</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 mix marketing">
+						<div class="portfolio__item">
+							<div
+								class="portfolio__item__video set-bg"
+								data-setbg="img/portfolio/portfolio-24.jpg"
+							></div>
+							<div class="portfolio__item__text">
+								<h4>Logo</h4>
+								<ul>
+									<li>Indentidad</li>
+									<li>DevBaltico</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 mix marketing">
+						<div class="portfolio__item">
+							<div
+								class="portfolio__item__video set-bg"
+								data-setbg="img/portfolio/portfolio-26.jpg"
+							></div>
+							<div class="portfolio__item__text">
+								<h4>Logo</h4>
+								<ul>
+									<li>Indentidad</li>
+									<li>DevBaltico</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 mix marketing">
+						<div class="portfolio__item">
+							<div
+								class="portfolio__item__video set-bg"
+								data-setbg="img/portfolio/portfolio-27.jpg"
+							></div>
+							<div class="portfolio__item__text">
+								<h4>Logo</h4>
+								<ul>
+									<li>Indentidad</li>
+									<li>DevBaltico</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 mix marketing">
+						<div class="portfolio__item">
+							<div
+								class="portfolio__item__video set-bg"
+								data-setbg="img/portfolio/portfolio-28.jpg"
+							></div>
+							<div class="portfolio__item__text">
+								<h4>Logo</h4>
+								<ul>
+									<li>Indentidad</li>
+									<li>DevBaltico</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 mix marketing">
+						<div class="portfolio__item">
+							<div
+								class="portfolio__item__video set-bg"
+								data-setbg="img/portfolio/portfolio-29.jpg"
+							></div>
+							<div class="portfolio__item__text">
+								<h4>Logo</h4>
+								<ul>
+									<li>Indentidad</li>
+									<li>DevBaltico</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 mix marketing">
+						<div class="portfolio__item">
+							<div
+								class="portfolio__item__video set-bg"
+								data-setbg="img/portfolio/portfolio-30.jpg"
+							></div>
+							<div class="portfolio__item__text">
+								<h4>Logo</h4>
+								<ul>
+									<li>Indentidad</li>
+									<li>DevBaltico</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 mix marketing">
+						<div class="portfolio__item">
+							<div
+								class="portfolio__item__video set-bg"
+								data-setbg="img/portfolio/portfolio-31.jpg"
+							></div>
+							<div class="portfolio__item__text">
+								<h4>Logo</h4>
+								<ul>
+									<li>Indentidad</li>
+									<li>DevBaltico</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 mix digital-marketing">
+						<div class="portfolio__item">
+							<div
+								class="portfolio__item__video set-bg"
+								data-setbg="img/portfolio/portfolio-32.jpg"
+							>
+								<a href="#" target="_blank" rel="noopener noreferrer"
+									><i class="fa fa-play"></i
+								></a>
+							</div>
+							<div class="portfolio__item__text">
+								<h4>Flayer y Logo</h4>
+								<span>Diseño Gráfico</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 mix digital-marketing">
+						<div class="portfolio__item">
+							<div
+								class="portfolio__item__video set-bg"
+								data-setbg="img/portfolio/portfolio-33.jpg"
+							>
+								<a href="#" target="_blank" rel="noopener noreferrer"
+									><i class="fa fa-play"></i
+								></a>
+							</div>
+							<div class="portfolio__item__text">
+								<h4>Pendones</h4>
+								<span>Diseño Gráfico</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 mix video">
+						<div class="portfolio__item">
+							<div
+								class="portfolio__item__video set-bg"
+								data-setbg="img/portfolio/minialbum.webp"
+							>
+								<a
+									href="https://www.youtube.com/watch?v=fXnHCfaYJZA"
+									class="play-btn video-popup"
+									><i class="fa fa-play"></i
+								></a>
+							</div>
+							<div class="portfolio__item__text">
+								<h4>Video</h4>
+								<ul>
+									<li>Mini Álbum</li>
+									<li>DevBaltico</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 mix marketing">
+						<div class="portfolio__item">
+							<div
+								class="portfolio__item__video set-bg"
+								data-setbg="img/portfolio/marca.webp"
+							>
+								<a
+									href="https://www.youtube.com/watch?v=xfftg1XNmWQ"
+									class="play-btn video-popup"
+									><i class="fa fa-play"></i
+								></a>
+							</div>
+							<div class="portfolio__item__text">
+								<h4>Logo</h4>
+								<ul>
+									<li>Pensando en el Logo</li>
+									<li>Curso Gratis</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="pagination__option">
+							<a href="#" class="arrow__pagination left__arrow"
+								><span class="arrow_left"></span> Prev</a
+							>
+							<a href="#" class="number__pagination">1</a>
+							<a href="#" class="number__pagination">2</a>
+							<a href="#" class="arrow__pagination right__arrow"
+								>Next <span class="arrow_right"></span
+							></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Portfolio Section End -->
 
+		<!-- Footer Section Begin -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__top">
+					<div class="row">
+						<div class="col-lg-6 col-md-6">
+							<div class="footer__top__logo">
+								<a href="/"
+									><img
+										class="mosca"
+										src="img/mosca-baltico.svg"
+										alt="log baltico"
+								/></a>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6">
+							<div class="footer__top__social">
+								<a href="https://twitter.com/devbaltico" target="_blank"
+									><i class="fa fa-twitter"></i
+								></a>
+								<a href="https://github.com/devbaltico" target="_blank"
+									><i class="fa fa-github"></i
+								></a>
+								<a href="https://www.instagram.com/devbaltico/" target="_blank"
+									><i class="fa fa-instagram"></i
+								></a>
+								<a href="https://www.youtube.com/@devbaltico" target="_blank"
+									><i class="fa fa-youtube-play"></i
+								></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__copyright">
+					<div class="row">
+						<div class="col-lg-12 text-center">
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							<p class="footer__copyright__text">
+								Copyright &copy;
+								<script>
+									document.write(new Date().getFullYear());
+								</script>
+								All rights reserved | Desarrollado por by
+								<a href="https://github.com/devbaltico" target="_blank"
+									>DevBaltico</a
+								>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Footer Section End -->
+		<script src="js/app.js"></script>
+		<!-- Js Plugins -->
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script src="js/mixitup.min.js"></script>
+		<script src="js/masonry.pkgd.min.js"></script>
+		<script src="js/jquery.slicknav.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
 </html>

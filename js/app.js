@@ -5,7 +5,7 @@ window.addEventListener('load', () => {
 	const asunto = document.getElementById('asunto');
 	const mensaje = document.getElementById('mensaje');
 
-	form.addEventListener('submit', e => {
+	form.addEventListener('submit', (e) => {
 		e.preventDefault();
 
 		checkInputs();
@@ -50,7 +50,7 @@ window.addEventListener('load', () => {
 
 const btn = document.getElementById('button');
 
-document.getElementById('form').addEventListener('submit', function(event) {
+document.getElementById('form').addEventListener('submit', function (event) {
 	event.preventDefault();
 
 	btn.value = 'Enviando...';
@@ -63,26 +63,34 @@ document.getElementById('form').addEventListener('submit', function(event) {
 			btn.value = 'Enviar Mensaje';
 			alert('Mensaje enviado correctamente!');
 		},
-		err => {
+		(err) => {
 			btn.value = 'Enviar Mensaje';
 			alert(JSON.stringify(err));
-		}
+		},
 	);
 });
 
-//detecto el scrolling para aplicar la animacion de la barra de habilidades
-window.onscroll = function() {
-	efectoHabilidades();
-};
 
 /*==================== Button Scroll to top ====================*/
-const btnScrollToTop = document.querySelector('#btnScrollToTop');
+/* Back To Top Button */
+window.onscroll = function () {
+	scrollFunctionBTT(); // back to top button
+};
 
-btnScrollToTop.addEventListener('click', function () {
-	window.scrollTo({
-		top: 0,
-		left: 0,
-		behavior: 'smooth',
-	});
-	$('html, body').animator({ scrollTop: 0 }, 'slow');
-});
+// Get the button
+myButton = document.getElementById('myBtn');
+
+// When the user scrolls down 20px from the top of the document, show the button
+function scrollFunctionBTT() {
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		myButton.style.display = 'block';
+	} else {
+		myButton.style.display = 'none';
+	}
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+	document.body.scrollTop = 0; // for Safari
+	document.documentElement.scrollTop = 0; // for Chrome, Firefox, IE and Opera
+}

@@ -70,7 +70,6 @@ document.getElementById('form').addEventListener('submit', function (event) {
 	);
 });
 
-
 /*==================== Button Scroll to top ====================*/
 /* Back To Top Button */
 window.onscroll = function () {

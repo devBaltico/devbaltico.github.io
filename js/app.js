@@ -20,7 +20,6 @@ window.addEventListener('load', () => {
 
 		//validando campo nombre
 		if (!nombreValor) {
-			console.log('CAMPO VACIO');
 			validaFalla(nombre, 'Campo vacío');
 		} else {
 			validaOk(nombre);

@@ -66,6 +66,7 @@ document.getElementById('form').addEventListener('submit', function (event) {
 			btn.value = 'Enviar Mensaje';
 			alert(JSON.stringify(err));
 		},
+		form.reset()
 	);
 });
 

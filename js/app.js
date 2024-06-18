@@ -1,74 +1,64 @@
-window.addEventListener('load', () => {
-	const form = document.getElementById('form');
-	const nombre = document.getElementById('nombre');
-	const email = document.getElementById('email');
-	const asunto = document.getElementById('asunto');
-	const mensaje = document.getElementById('mensaje');
-
-	form.addEventListener('submit', (e) => {
-		e.preventDefault();
-
-		checkInputs();
-	});
-
-	function checkInputs() {
-		// trim to remove the whitespaces
-		const nombreValor = nombre.value.trim();
-		const emailValor = email.value.trim();
-		const asuntoValor = asunto.value.trim();
-		const mensajeValor = mensaje.value.trim();
-
-		//validando campo nombre
-		if (!nombreValor) {
-			validaFalla(nombre, 'Campo vacío');
-		} else {
-			validaOk(nombre);
-		}
-		//validando campo email
-		if (!emailValor) {
-			validaFalla(email, 'Campo vacío');
-		} else {
-			validaOk(email);
-		}
-		//validando campo asunto
-		if (!asuntoValor) {
-			validaFalla(Asunto, 'Campo vacío');
-		} else {
-			validaOk(Asunto);
-		}
-		//validando campo mensaje
-		if (!mensajeValor) {
-			validaFalla(mensaje, 'Campo vacío');
-		} else {
-			validaOk(mensaje);
-		}
-	}
-});
-
 /** ===================== Bonton de enviar ====================== */
+const form = document.getElementById('form');
+const nombre = document.getElementById('nombre');
+const email = document.getElementById('email');
+const asunto = document.getElementById('asunto');
+const mensaje = document.getElementById('mensaje');
+const error = document.getElementById('warnings');
 
 const btn = document.getElementById('button');
 
-document.getElementById('form').addEventListener('submit', function (event) {
-	event.preventDefault();
+function enviarFormulario() {
+	let mensajeError = [];
 
-	btn.value = 'Enviando...';
+	if (nombre.value === null || nombre.value === '') {
+		mensajeError.push('¡Ingrese un nombre!');
+	}
 
-	const serviceID = 'default_service';
-	const templateID = 'template_o6vtk1n';
+	if (email.value === null || email.value === '') {
+		mensajeError.push('¡Ingrese un email!');
+	}
 
-	emailjs.sendForm(serviceID, templateID, this).then(
-		() => {
-			btn.value = 'Enviar Mensaje';
-			alert('Mensaje enviado correctamente!');
-		},
-		(err) => {
-			btn.value = 'Enviar Mensaje';
-			alert(JSON.stringify(err));
-		},
-		form.reset()
-	);
-});
+	if (asunto.value === null || asunto.value === '') {
+		mensajeError.push('¡Ingrese un asunto!');
+	}
+
+	if (mensaje.value === null || mensaje.value === '') {
+		mensajeError.push('¡Ingrese un mensaje!');
+	} else {
+	}
+
+	error.innerHTML = mensajeError.join(', <br>');
+
+	if (mensajeError.length > 0) {
+		return false; // Detiene la ejecución si hay mensajes de error
+	}
+
+	document.getElementById('form').addEventListener('submit', function (event) {
+		event.preventDefault();
+
+		enviarFormulario();
+
+		btn.value = 'Enviando...';
+
+		const serviceID = 'default_service';
+		const templateID = 'template_o6vtk1n';
+
+		emailjs.sendForm(serviceID, templateID, this).then(
+			() => {
+				btn.value = 'Enviar Mensaje';
+				alert('¡Mensaje enviado correctamente!');
+				form.reset;
+			},
+			(err) => {
+				btn.value = 'Enviar Mensaje';
+				alert(JSON.stringify(err));
+			},
+		);
+	});
+	
+	return true;
+}
 
 /*==================== Button Scroll to top ====================*/
 /* Back To Top Button */

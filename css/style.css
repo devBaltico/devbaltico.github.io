@@ -93,6 +93,15 @@ h6 {
 }
 
 /*------------- *Scrool vertical -------------*/
+/*------------- Warning Email -------------*/
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: rgb(204, 42, 13);
+    padding-top: 20px;
+}
+/*------------- !Warning Email -------------*/
 
 /* Cursos */
 
@@ -2007,7 +2016,7 @@ ol {
 	border: 1px solid rgba(225, 225, 225, 0.5);
 	background: transparent;
 	font-size: 16px;
-	color: #adadad;
+	color: #fff;
 	padding-left: 20px;
 	font-weight: 300;
 	margin-right: 20px;

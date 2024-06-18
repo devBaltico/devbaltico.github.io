@@ -193,6 +193,7 @@
 									name="mensaje"
 									id="mensaje"
 								></textarea>
+								<p class="warnings" id="warnings"></p>
 								<p></p>
 								<br />
 								<div class="mb-3">
@@ -206,9 +207,9 @@
 									id="button"
 									class="site-btn"
 									value="Send Email"
+									onclick="return enviarFormulario()"
 								/>
 							</form>
-							<div id="error"></div>
 							<script
 								type="text/javascript"
 								src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"

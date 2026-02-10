@@ -2400,18 +2400,6 @@ input[type='submit'] {
 	height: 36px;
 }
 
-.a span {
-	color: #ffffff;
-	font-family: Montserrat;
-	font-weight: 400;
-	font-size: 30px;
-
-
-
-
-
-}
-
 /* Button Scroll to top*/
 #btnScrollToTop {
 	z-index: 1;

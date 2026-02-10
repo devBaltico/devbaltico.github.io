@@ -42,7 +42,7 @@ function enviarFormulario() {
 		btn.value = 'Enviando...';
 
 		const serviceID = 'default_service';
-		const templateID = 'template_o6vtk1n';
+		const templateID = 'service_bpori8t';
 
 		emailjs.sendForm(serviceID, templateID, this).then(
 			() => {

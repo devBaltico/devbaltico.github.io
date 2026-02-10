@@ -27,6 +27,7 @@ Created: Colorib
 /*----------------------------------------*/
 /* Template default CSS
 /*----------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 html,
 body {
 	height: 100%;
@@ -2397,6 +2398,18 @@ input[type='submit'] {
 
 .mosca {
 	height: 36px;
+}
+
+.a span {
+	color: #ffffff;
+	font-family: Montserrat;
+	font-weight: 400;
+	font-size: 30px;
+
+
+
+
+
 }
 
 /* Button Scroll to top*/

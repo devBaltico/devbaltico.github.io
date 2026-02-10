@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!doctype html>
+<!-- saved from url=(0044)https://devbaltico.github.io/curso-html.html -->
 <html lang="es">
 	<head>
 		<meta charset="UTF-8" />
@@ -10,7 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-		<title>DevBaltico | Curso HTML 5</title>
+		<title>DevBaltico | Cursos</title>
 
 		<!-- Google Font -->
 		<link
@@ -48,12 +49,12 @@
 
 	<body>
 		<!-- Page Preloder -->
-		<div id="preloder">
-			<div class="loader"></div>
+		<div id="preloder" style="display: none">
+			<div class="loader" style="display: none"></div>
 		</div>
 		<!-- Back To Top Button -->
 		<button onclick="topFunction()" id="myBtn" style="display: block">
-			<img src="img/up-arrow.png" alt="" />
+			<img src="img/up-arrow.png" />
 		</button>
 
 		<!-- Header Section Begin -->
@@ -62,29 +63,53 @@
 				<div class="row">
 					<div class="col-lg-2">
 						<div class="header__logo">
-							<a href="./index.html"><img src="img/logo.png" alt="" /></a>
+							<a href="https://devbaltico.github.io/index.html"
+								><img src="./DevBaltico _ Curso HTML 5_files/logo.png" alt=""
+							/></a>
 						</div>
 					</div>
 					<div class="col-lg-10">
 						<div class="header__nav__option">
 							<nav class="header__nav__menu mobile-menu">
 								<ul>
-									<li><a href="./index.html">Home</a></li>
-									<li><a href="./about.html">About me</a></li>
-									<li><a href="./portfolio.html">Portafolio</a></li>
-									<li class="active"><a href="./cursos.html">Cursos</a></li>
-									<li><a href="./contact.html">Contacto</a></li>
+									<li>
+										<a href="https://devbaltico.github.io/index.html">Home</a>
+									</li>
+									<li>
+										<a href="https://devbaltico.github.io/about.html"
+											>About me</a
+										>
+									</li>
+									<li>
+										<a href="https://devbaltico.github.io/portfolio.html"
+											>Portafolio</a
+										>
+									</li>
+									<li class="active">
+										<a href="https://devbaltico.github.io/cursos.html"
+											>Cursos</a
+										>
+									</li>
+									<li>
+										<a href="https://devbaltico.github.io/contact.html"
+											>Contacto</a
+										>
+									</li>
 								</ul>
 							</nav>
 							<div class="header__nav__social">
-								<a href="https://t.me/devbaltico" target="_blank"><i class="fa fa-telegram"></i></a>
+								<a href="https://t.me/devbaltico" target="_blank"
+									><i class="fa fa-telegram"></i
+								></a>
 								<a href="https://x.com/devbaltico" target="_blank"
 									><i class="fa fa-twitter"></i
 								></a>
 								<a href="https://github.com/devbaltico" target="_blank"
 									><i class="fa fa-github"></i
 								></a>
-								<a href="https://www.instagram.com/devbaltico/" target="_blank"><i class="fa fa-instagram"></i></a>
+								<a href="https://www.instagram.com/devbaltico/" target="_blank"
+									><i class="fa fa-instagram"></i
+								></a>
 								<a href="https://www.youtube.com/@devbaltico" target="_blank"
 									><i class="fa fa-youtube-play"></i
 								></a>
@@ -92,7 +117,67 @@
 						</div>
 					</div>
 				</div>
-				<div id="mobile-menu-wrap"></div>
+				<div id="mobile-menu-wrap">
+					<div class="slicknav_menu">
+						<a
+							href="https://devbaltico.github.io/curso-html.html#"
+							aria-haspopup="true"
+							role="button"
+							tabindex="0"
+							class="slicknav_btn slicknav_collapsed"
+							style="outline: none"
+							><span class="slicknav_menutxt">MENU</span
+							><span class="slicknav_icon"
+								><span class="slicknav_icon-bar"></span
+								><span class="slicknav_icon-bar"></span
+								><span class="slicknav_icon-bar"></span></span
+						></a>
+						<nav
+							class="slicknav_nav slicknav_hidden"
+							style="display: none"
+							aria-hidden="true"
+							role="menu"
+						>
+							<ul>
+								<li>
+									<a
+										href="https://devbaltico.github.io/index.html"
+										role="menuitem"
+										>Home</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://devbaltico.github.io/about.html"
+										role="menuitem"
+										>About me</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://devbaltico.github.io/portfolio.html"
+										role="menuitem"
+										>Portafolio</a
+									>
+								</li>
+								<li class="active">
+									<a
+										href="https://devbaltico.github.io/cursos.html"
+										role="menuitem"
+										>Cursos</a
+									>
+								</li>
+								<li>
+									<a
+										href="https://devbaltico.github.io/contact.html"
+										role="menuitem"
+										>Contacto</a
+									>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
 			</div>
 		</header>
 		<!-- Header End -->
@@ -101,6 +186,7 @@
 		<div
 			class="breadcrumb-option spad set-bg"
 			data-setbg="img/breadcrumb-bg.webp"
+			style="background-image: url('img/breadcrumb-bg.webp')"
 		>
 			<div class="container">
 				<div class="row">
@@ -108,7 +194,7 @@
 						<div class="breadcrumb__text">
 							<h2>Curso HTML</h2>
 							<div class="breadcrumb__links">
-								<a href="/">Home</a>
+								<a href="https://devbaltico.github.io/">Home</a>
 								<span>Cursos</span>
 							</div>
 						</div>
@@ -121,7 +207,7 @@
 		<!-- Cursos Section Begin -->
 		<section class="about spad">
 			<br />
-			<!================== HTML ==================>
+			<!--================== HTML ==================-->
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6">
@@ -131,6 +217,7 @@
 									<div
 										class="about__pic__item about__pic__item--large set-bg"
 										data-setbg="img/cursos/cursohtml-1.webp"
+										style="background-image: url('img/cursos/cursohtml-1.webp')"
 									></div>
 								</div>
 								<div class="col-lg-6 col-md-6 col-sm-6">
@@ -139,12 +226,18 @@
 											<div
 												class="about__pic__item set-bg"
 												data-setbg="img/cursos/cursohtml-2.webp"
+												style="
+													background-image: url('img/cursos/cursohtml-2.webp');
+												"
 											></div>
 										</div>
 										<div class="col-lg-12">
 											<div
 												class="about__pic__item set-bg"
 												data-setbg="img/cursos/cursohtml-3.webp"
+												style="
+													background-image: url('img/cursos/cursohtml-3.webp');
+												"
 											></div>
 										</div>
 									</div>
@@ -162,11 +255,14 @@
 								<div>
 									<div class="services__item">
 										<div class="services__item__icon">
-											<img src="img/icons/si-3.png" alt="" />
+											<img
+												src="img/icons/si-3.png"
+												alt=""
+											/>
 										</div>
 										<h4>Curso Online</h4>
 										<p>
-											Curso práctico b>vía ZOOM</b> te ayudará a construir tu
+											Curso práctico b&gt;vía ZOOM te ayudará a construir tu
 											propia página web.
 										</p>
 										<h4>Contenido del curso</h4>
@@ -229,10 +325,14 @@
 											<li>
 												Transferencia (Banesco o Venezuela) aplica tasa del día.
 											</li>
-											<li>Pago Móvil Banesco o Venezuela aplica tasa del día.</li>
+											<li>
+												Pago Móvil Banesco o Venezuela aplica tasa del día.
+											</li>
 										</ul>
 
-										<a href="./contact.html">Quiero hacer el curso</a>
+										<a href="https://devbaltico.github.io/contact.html"
+											>Quiero hacer el curso</a
+										>
 									</div>
 								</div>
 							</div>
@@ -260,14 +360,18 @@
 						</div>
 						<div class="col-lg-6 col-md-6">
 							<div class="footer__top__social">
-								<a href="https://t.me/devbaltico" target="_blank"><i class="fa fa-telegram"></i></a>
+								<a href="https://t.me/devbaltico" target="_blank"
+									><i class="fa fa-telegram"></i
+								></a>
 								<a href="https://x.com/devbaltico" target="_blank"
 									><i class="fa fa-twitter"></i
 								></a>
 								<a href="https://github.com/devbaltico" target="_blank"
 									><i class="fa fa-github"></i
 								></a>
-								<a href="https://www.instagram.com/devbaltico/" target="_blank"><i class="fa fa-instagram"></i></a>
+								<a href="https://www.instagram.com/devbaltico/" target="_blank"
+									><i class="fa fa-instagram"></i
+								></a>
 								<a href="https://www.youtube.com/@devbaltico" target="_blank"
 									><i class="fa fa-youtube-play"></i
 								></a>
@@ -280,11 +384,11 @@
 						<div class="col-lg-12 text-center">
 							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 							<p class="footer__copyright__text">
-								Copyright &copy;
+								Copyright ©
 								<script>
 									document.write(new Date().getFullYear());
 								</script>
-								All rights reserved | Desarrollado por by
+								2026 All rights reserved | Desarrollado por by
 								<a href="https://github.com/devbaltico" target="_blank"
 									>DevBaltico</a
 								>
@@ -295,7 +399,6 @@
 			</div>
 		</footer>
 		<!-- Footer Section End -->
-		<!-- Js Plugins -->
 		<script src="js/jquery-3.3.1.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery.magnific-popup.min.js"></script>
@@ -305,5 +408,48 @@
 		<script src="js/owl.carousel.min.js"></script>
 		<script src="js/main.js"></script>
 		<script src="js/app.js"></script>
+
+		<div
+			class="glasp-extension-toaster"
+			style="
+				display: block;
+				width: 320px;
+				margin: unset;
+				padding: unset;
+				border: unset;
+				border-radius: unset;
+				outline: unset;
+				background-color: unset;
+				box-shadow: unset;
+				position: fixed;
+				top: 40px;
+				right: 24px;
+				z-index: 9999;
+			"
+		>
+			<template shadowrootmode="open"
+				><div class="glasp-extension" style="font-family: inherit"></div
+			></template>
+		</div>
 	</body>
+	<div
+		class="glasp-extension"
+		style="
+			display: block;
+			width: unset;
+			margin: unset;
+			padding: unset;
+			border: unset;
+			border-radius: unset;
+			outline: unset;
+			background-color: unset;
+			box-shadow: unset;
+			position: fixed;
+			bottom: 16px;
+			right: 16px;
+			z-index: 9999;
+		"
+	>
+		<div class="glasp-extension" style="font-family: inherit"></div>
+	</div>
 </html>
